@@ -52,6 +52,31 @@ export default defineConfig({
           router: ({ document }) => `/demo/blog/${document._sys.filename}`,
         },
       },
+      {
+        name: "author",
+        label: "Authors",
+        path: "content/authors",
+        format: "json",
+        fields: [
+          {
+            type: "string",
+            name: "name",
+            label: "Name",
+            required: true,
+            isTitle: true,
+          },
+          {
+            type: "string",
+            name: "bio",
+            label: "Bio",
+          },
+          {
+            type: "image",
+            name: "avatar",
+            label: "Avatar",
+          },
+        ],
+      }
     ],
   },
 });
