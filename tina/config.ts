@@ -29,9 +29,9 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "blog_post",
+        label: "Blog Posts",
+        path: "content/blog-posts",
         fields: [
           {
             type: "string",
@@ -48,8 +48,7 @@ export default defineConfig({
           },
         ],
         ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
+          router: ({ document }) => `/blog/${document._sys.filename}`,
         },
       },
       {
@@ -76,7 +75,38 @@ export default defineConfig({
             label: "Avatar",
           },
         ],
-      }
+        ui: {
+          router: ({ document }) => `/author/${document._sys.filename}`,
+        },
+      },
+      {
+        name: "product",
+        label: "Products",
+        path: "content/products",
+        format: "json",
+        fields: [
+          {
+            type: "string",
+            name: "name",
+            label: "Name",
+            required: true,
+            isTitle: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+          },
+          {
+            type: "image",
+            name: "icon",
+            label: "Icon",
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/product/${document._sys.filename}`,
+        },
+      },
     ],
   },
 });

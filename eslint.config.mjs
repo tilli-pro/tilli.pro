@@ -1,16 +1,17 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
+import base from "@tilli-pro/eslint-config/base";
+import next from "@tilli-pro/eslint-config/nextjs";
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...base,
+  ...next,
+  {
+    rules: {
+      "@typescript-eslint/no-unused-expressions": "off",
+      "@typescript-eslint/dot-notation": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "@next/next/no-page-custom-font": "off"
+    }
+  }
 ];
 
 export default eslintConfig;
