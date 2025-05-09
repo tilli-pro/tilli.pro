@@ -1,5 +1,6 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
+
 export default function Header() {
 	return (
 		<div className='w-full sticky top-0 z-10 bg-white opacity-50 p-3 text-black flex items-center justify-between'>
