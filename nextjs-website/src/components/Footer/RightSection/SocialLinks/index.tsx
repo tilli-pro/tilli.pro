@@ -8,7 +8,7 @@ export default function SocialLinks() {
 				<Link
 					key={label}
 					href={href}
-					className={`bg-white rounded-full size-12 flex items-center justify-center ${btnClass}`}
+					className={`bg-white rounded-full size-10 flex items-center justify-center ${btnClass}`}
 					aria-label={label}
 				>
 					<Icon className={`text-black ${iconClass}`} />
