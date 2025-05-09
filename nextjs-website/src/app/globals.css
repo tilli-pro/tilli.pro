@@ -119,4 +119,8 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+
+	:root {
+		--gradient-light-blue-text: linear-gradient(90deg, #448de6 0%, #98b2e9 100%);
+	}
 }
