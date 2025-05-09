@@ -17,7 +17,7 @@ export default function Section1() {
 				</p>
 				<div className='relative w-fit'>
 					<Input className='w-xs rounded-full' placeholder='Enter email address' />
-					<Button className='absolute right-0 bottom-0 rounded-full rounded-l-none [background:var(--gradient-light-blue-text)]'>
+					<Button className='absolute right-0 bottom-0 rounded-full rounded-l-none [background:var(--gradient-light-blue)]'>
 						Sign up
 					</Button>
 				</div>
