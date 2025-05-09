@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import SocialLinks from './SocialLinks';
+import SocialLinks from './RightSection/SocialLinks';
 import { ChevronRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -19,11 +19,15 @@ export default function LeftSection() {
 
 	return (
 		<div className='flex flex-col gap-20'>
+			{/* Top Section */}
 			<div className='flex-1 flex flex-col gap-6'>
-				<div className='flex items-center gap-2'>
-					<h1 className='text-4xl font-bold text-white'>tilli</h1>
-				</div>
+				{/* Logo */}
+				<h1 className='text-4xl font-bold text-white'>tilli</h1>
+
+				{/* Description */}
 				<p className='max-w-sm'>{description}</p>
+
+				{/* Button */}
 				<Button
 					className='bg-transparent rounded-full w-40 border hover:text-white border-pink-500 hover:bg-transparent text-white'
 					variant='outline'
@@ -33,8 +37,9 @@ export default function LeftSection() {
 				</Button>
 			</div>
 
-			{/* Bottom Row */}
+			{/* Bottom Section/Row */}
 			<div className='flex justify-between items-end justify-self-end'>
+				{/* Social Links */}
 				<SocialLinks />
 				{/* Copyright */}
 				<div className='text-xs flex flex-col mt-6 text-right gap-1'>

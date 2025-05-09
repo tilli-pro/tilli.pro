@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
-import { navColumns, bottomLinks } from './RightSection/right-section';
+import { navColumns, bottomLinks } from './right-section';
 
 export default function RightSection() {
 	return (

@@ -4,8 +4,11 @@ import { Button } from './ui/button';
 
 export default function Header() {
 	return (
-		<div className='w-full sticky top-0 z-10 bg-white opacity-20 p-3 text-black flex items-center justify-between px-32 py-6'>
+		<div className='w-full sticky top-0 z-10 bg-white opacity-20 p-3 text-black flex items-center justify-between px-8 md:px-32 py-6'>
+			{/* Logo */}
 			<h1 className='text-4xl font-bold text-black'>tilli</h1>
+
+			{/* Navigation */}
 			<nav>
 				<ul className='flex gap-8'>
 					<li>
@@ -25,6 +28,8 @@ export default function Header() {
 					</li>
 				</ul>
 			</nav>
+
+			{/* Buttons */}
 			<div className='flex gap-4'>
 				<button className='flex items-center gap-1'>
 					Pricing <ArrowUpRightIcon className='size-4' />
