@@ -1,12 +1,13 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
+import { Button } from './ui/button';
 
 export default function Header() {
 	return (
-		<div className='w-full sticky top-0 z-10 bg-white opacity-50 p-3 text-black flex items-center justify-between'>
-			<h1 className='text-4xl font-bold'>Insert logo here</h1>
+		<div className='w-full sticky top-0 z-10 bg-white opacity-20 p-3 text-black flex items-center justify-between px-32 py-6'>
+			<h1 className='text-4xl font-bold text-black'>tilli</h1>
 			<nav>
-				<ul className='flex gap-4'>
+				<ul className='flex gap-8'>
 					<li>
 						<Link href='/products'>Products</Link>
 					</li>
@@ -25,13 +26,12 @@ export default function Header() {
 				</ul>
 			</nav>
 			<div className='flex gap-4'>
-				<button className='flex items-center gap-2'>
+				<button className='flex items-center gap-1'>
 					Pricing <ArrowUpRightIcon className='size-4' />
 				</button>
-				{/* TODO: insert gradient background */}
-				<button className='flex items-center gap-2 bg-pink-500 rounded-md px-3 py-2'>
+				<Button className='flex items-center gap-2 bg-pink-500 text-white rounded-md px-3 py-2'>
 					Free Trial <ArrowUpRightIcon className='size-4 text-white' />
-				</button>
+				</Button>
 			</div>
 		</div>
 	);

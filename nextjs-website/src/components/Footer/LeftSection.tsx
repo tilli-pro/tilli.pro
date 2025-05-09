@@ -21,18 +21,15 @@ export default function LeftSection() {
 		<div className='flex flex-col gap-20'>
 			<div className='flex-1 flex flex-col gap-6'>
 				<div className='flex items-center gap-2'>
-					<h1 className='text-4xl font-bold text-white'>Insert logo here</h1>
+					<h1 className='text-4xl font-bold text-white'>tilli</h1>
 				</div>
 				<p className='max-w-sm'>{description}</p>
 				<Button
-					asChild
+					className='bg-transparent rounded-full w-40 border hover:text-white border-pink-500 hover:bg-transparent text-white'
 					variant='outline'
-					className='bg-transparent rounded-full w-40 border hover:text-white border-[#448DE6] hover:bg-transparent text-white'
 					onClick={() => router.push('/about')}
 				>
-					<div>
-						More about us <ChevronRightIcon className='size-5' />
-					</div>
+					More about us <ChevronRightIcon className='size-5' />
 				</Button>
 			</div>
 
