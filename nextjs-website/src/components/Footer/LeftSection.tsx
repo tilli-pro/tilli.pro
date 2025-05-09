@@ -1,8 +1,6 @@
-import { Button } from '@/components/ui/button';
 import SocialLinks from './RightSection/SocialLinks';
 import { ChevronRightIcon } from 'lucide-react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import TiiliSVG from '@/assets/TiiliSVG';
 const description =
 	'We’re devoted to creating a global consumer environment that feels more personalized and connected than ever before. Through cloud-based, customer-centric tools, we’re revolutionizing CPaaS and payment processing landscapes to create avenues that help businesses and people connect, collaborate, and make payments in real-time.';
@@ -14,7 +12,6 @@ const copyrightLinks = [
 ];
 
 export default function LeftSection() {
-	const router = useRouter();
 	const thisYear = new Date().getFullYear();
 
 	return (
@@ -28,19 +25,19 @@ export default function LeftSection() {
 				<p className='max-w-sm'>{description}</p>
 
 				{/* Button */}
-				<Button
-					className='bg-transparent rounded-full w-40 border hover:text-white border-pink-500 hover:bg-transparent text-white'
-					variant='outline'
-					onClick={() => router.push('/about')}
-				>
-					More about us <ChevronRightIcon className='size-5' />
-				</Button>
+				<Link href='/about' className='w-52 rounded-full bg-gradient-to-r from-[#448DE6] to-[#98B2E9] p-[1px]'>
+					<div className='flex items-center justify-center gap-2 px-4 py-2 rounded-full text-white bg-black'>
+						<p>More about us</p>
+						<ChevronRightIcon className='size-5' />
+					</div>
+				</Link>
 			</div>
 
 			{/* Bottom Section/Row */}
 			<div className='flex justify-between items-end justify-self-end'>
 				{/* Social Links */}
 				<SocialLinks />
+
 				{/* Copyright */}
 				<div className='text-xs flex flex-col mt-6 text-right gap-1'>
 					<span>© {thisYear} — Copyright</span>

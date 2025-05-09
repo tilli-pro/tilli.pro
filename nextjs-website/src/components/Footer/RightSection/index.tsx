@@ -13,9 +13,9 @@ export default function RightSection() {
 							{col.title === 'Developers'
 								? col.links.map((link, idx) =>
 										'extra' in link ? (
-											<li key={idx} className='text-[#A9A9A9]'>
+											<li key={idx}>
 												<span className='font-semibold'>{link.label}</span>
-												<div className='ml-0.5 text-[#A9A9A9]'>
+												<div className='ml-0.5'>
 													<Link href={link.href}>{link.extra}</Link>
 												</div>
 											</li>
@@ -23,9 +23,7 @@ export default function RightSection() {
 								  )
 								: col.links.map((link, idx) => (
 										<li key={idx}>
-											<Link href={link.href} className='text-[#A9A9A9]'>
-												{link.label}
-											</Link>
+											<Link href={link.href}>{link.label}</Link>
 										</li>
 								  ))}
 						</ul>
@@ -46,7 +44,7 @@ export default function RightSection() {
 				{/* Headquarters */}
 				<div className='text-right'>
 					<h4 className='font-semibold text-white mb-2 text-xl'>Headquarters</h4>
-					<address className='not-italic text-[#A9A9A9] text-sm'>
+					<address className='not-italic text-foreground text-sm'>
 						8260 Greensboro Dr,
 						<br />
 						Suite 270, McLean VA, 22102

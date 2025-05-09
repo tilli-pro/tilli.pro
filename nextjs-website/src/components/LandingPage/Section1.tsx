@@ -6,7 +6,7 @@ import { Button } from '../ui/button';
 
 export default function Section1() {
 	return (
-		<div className='relative flex flex-col gap-6 py-10 px-8'>
+		<div className='relative flex flex-col gap-80 py-10 px-10'>
 			<div className='flex flex-col gap-6'>
 				<h2 className='sm:text-6xl text-4xl'>
 					Smarter Financial <br /> Solutions for Every <br /> Industry
