@@ -1,8 +1,8 @@
-import YoutubeSVG from '@/assets/YoutubeSVG';
-import InstagramSVG from '@/assets/InstagramSVG';
-import FacebookSVG from '@/assets/FacebookSVG';
-import LinkedInSVG from '@/assets/LinkedInSVG';
-import XSVG from '@/assets/XSVG';
+import YoutubeSVG from '@/assets/footer/social-media/YoutubeSVG';
+import InstagramSVG from '@/assets/footer/social-media/InstagramSVG';
+import FacebookSVG from '@/assets/footer/social-media/FacebookSVG';
+import LinkedInSVG from '@/assets/footer/social-media/LinkedInSVG';
+import XSVG from '@/assets/footer/social-media/XSVG';
 
 export const socialLinks = [
 	{

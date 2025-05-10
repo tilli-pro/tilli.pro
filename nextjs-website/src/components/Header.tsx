@@ -1,7 +1,7 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from './ui/button';
-import TiiliSVG from '@/assets/TiiliSVG';
+import TiiliSVG from '@/assets/branding/TiiliSVG';
 
 export default function Header() {
 	return (
@@ -9,7 +9,7 @@ export default function Header() {
 			{/* Logo */}
 			<TiiliSVG fill='#000' />
 
-			{/* Navigation */}
+			{/* Center Links */}
 			<nav>
 				<ul className='flex gap-8'>
 					<li>
@@ -30,7 +30,7 @@ export default function Header() {
 				</ul>
 			</nav>
 
-			{/* Buttons */}
+			{/* Right hand links */}
 			<div className='flex gap-4'>
 				<button className='flex items-center gap-1'>
 					Pricing <ArrowUpRightIcon className='size-4' />

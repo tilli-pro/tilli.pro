@@ -1,6 +1,6 @@
 'use client';
 
-import ULogo from '@/assets/ULogo';
+import ULogo from '@/assets/branding/ULogo';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverTrigger, PopoverContent } from '@/components/ui/popover';
 
@@ -36,10 +36,10 @@ export default function WelcomePopover() {
 						</span>
 					</h2>
 					<h3 className='text-xl font-semibold mb-3'>Welcome to tilli.</h3>
-					<p className='mb-2'>How can we help you today?</p>
+					<p>How can we help you today?</p>
 				</div>
 
-				<div className='bg-white flex flex-col gap-4 px-12 py-9 pb-12'>
+				<div className='bg-white flex flex-col gap-4 px-14 py-9 pb-12'>
 					{options.map(({ label, icon }) => (
 						<Button key={label} className='py-6'>
 							{label} <span className='ml-2'>{icon}</span>
