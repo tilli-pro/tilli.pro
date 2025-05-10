@@ -4,13 +4,13 @@ import { Input } from '../ui/input';
 import { ArrowUpRightIcon } from 'lucide-react';
 import { Button } from '../ui/button';
 import Ellipse10 from './assets/Ellipse10';
-import Ellipse7 from './assets/Ellipse7';
 import Ellipse7Left from './assets/Ellipse7Left';
 import Header from '../Header';
 import Ellipse8 from './assets/Ellipse8';
 import Ellipse9 from './assets/Ellipse9';
 import Ellipse12 from './assets/Ellipse7Top';
 import Ellipse7Top from './assets/Ellipse7Top';
+import WelcomePopover from '../WelcomePopover';
 
 // TODO: fix the elipses. they are not aligned properly at all
 export default function Section1() {
@@ -54,6 +54,8 @@ export default function Section1() {
 					Supporting by business across the globe
 				</p>
 			</div>
+
+			<WelcomePopover />
 		</div>
 	);
 }
