@@ -6,14 +6,18 @@ import Header from '../Header';
 import Elipses from './components/Elipses';
 import WelcomePopover from '../WelcomePopover';
 import PartiallyPaidInvoicesWidgetSvg from '@/assets/widget-svgs/PartiallyPaidInvoicesWidgetSvg';
+import AddAccountWidgetSvg from '@/assets/widget-svgs/AddAccountWidgetSVG';
+import LongInvoiceWidget from '@/assets/widget-svgs/LongInvoiceWidget';
 
 export default function Section1() {
 	return (
 		<div className='relative h-screen overflow-hidden'>
+			{/* Header */}
 			<Header />
 
-			{/* Left section */}
+			{/* Main content */}
 			<div className='flex flex-col py-10 px-10'>
+				{/* Left section (text) */}
 				<div className='absolute z-10 top-70 left-20 flex flex-col gap-6'>
 					<h2 className='sm:text-6xl text-4xl'>
 						Smarter Financial <br /> Solutions for Every <br /> Industry
@@ -36,16 +40,23 @@ export default function Section1() {
 					</Link>
 				</div>
 
-				<PartiallyPaidInvoicesWidgetSvg className='size-100 absolute top-1/2 right-0 -translate-y-1/2' />
+				{/* Right section (widgets) */}
+				{/* TODO: fix the widgets to be aligned exactly like in figma */}
+				<PartiallyPaidInvoicesWidgetSvg className='size-100 absolute top-60 right-0' />
+				<AddAccountWidgetSvg className='size-100 absolute bottom-40 left-133 w-fit backdrop-blur-xl' />
+				<LongInvoiceWidget className='size-20 absolute top-95 left-155 w-fit backdrop-blur-xl' />
 
-				<Elipses />
-
+				{/* Bottom section (text) */}
 				<p className='text-center absolute bottom-10 left-1/2 -translate-x-1/2'>
 					Supported by businesses across the globe
 				</p>
 			</div>
 
+			{/* Welcome popover */}
 			<WelcomePopover />
+
+			{/* Elipses (background) */}
+			<Elipses />
 		</div>
 	);
 }

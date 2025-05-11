@@ -18,7 +18,7 @@ export default function Elipses() {
 			{/* right middle */}
 			<Ellipse10 className='absolute top-40 right-0' />
 			{/* <Ellipse9 className='absolute top-50 right-0 border-blue-500 border-2' /> */}
-			<Ellipse12 className='absolute top-50 -right-140' />
+			<Ellipse12 className='absolute top-50 -right-60' />
 		</>
 	);
 }

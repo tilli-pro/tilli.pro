@@ -11,7 +11,7 @@ function PartiallyPaidInvoicesWidgetSvg({
 	return (
 		<svg
 			className={cn('h-full w-auto', className)}
-			fill='#1A1A1A'
+			fill='none'
 			width={413}
 			height={168}
 			viewBox='0 0 413 168'
@@ -20,13 +20,11 @@ function PartiallyPaidInvoicesWidgetSvg({
 		>
 			<foreignObject x={-70} y={-70} width={543} height={308}>
 				<div
-					xmlns='http://www.w3.org/1999/xhtml'
 					style={{
 						backdropFilter: 'blur(35px)',
 						height: '100%',
 						width: '100%',
 					}}
-					clipPath='url(#bgblur_0_708_7675_clip_path)'
 				/>
 			</foreignObject>
 			<rect
