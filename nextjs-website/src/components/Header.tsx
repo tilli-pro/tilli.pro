@@ -31,11 +31,11 @@ export default function Header() {
 			</nav>
 
 			{/* Right hand links */}
-			<div className='flex gap-4'>
-				<button className='flex items-center gap-1'>
+			<div className='flex gap-2'>
+				<Button className='flex items-center gap-1 bg-transparent hover:bg-transparent text-black'>
 					Pricing <ArrowUpRightIcon className='size-4' />
-				</button>
-				<Button className='flex items-center gap-2 bg-pink-500 text-white rounded-md px-3 py-2'>
+				</Button>
+				<Button className='flex items-center gap-2 [background:var(--gradient-free-trial-button-in-header)] text-white rounded-md px-3 py-2'>
 					Free Trial <ArrowUpRightIcon className='size-4 text-white' />
 				</Button>
 			</div>
