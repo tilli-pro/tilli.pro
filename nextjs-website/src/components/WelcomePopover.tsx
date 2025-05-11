@@ -26,7 +26,7 @@ export default function WelcomePopover() {
 			<PopoverContent
 				align='end'
 				sideOffset={16}
-				className='w-96 text-white font-inter overflow-hidden rounded-md shadow-2xl p-0'
+				className='w-96 text-white font-inter bg-white overflow-hidden rounded-md shadow-2xl p-0'
 			>
 				<div className={`${gradientBG} py-6 px-9`}>
 					<h2 className='text-2xl font-bold flex items-center gap-2'>

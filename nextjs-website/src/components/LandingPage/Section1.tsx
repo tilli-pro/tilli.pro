@@ -5,9 +5,11 @@ import { Button } from '../ui/button';
 import Header from '../Header';
 import Elipses from './components/Elipses';
 import WelcomePopover from '../WelcomePopover';
-import PartiallyPaidInvoicesWidgetSvg from '@/assets/widget-svgs/PartiallyPaidInvoicesWidgetSvg';
-import AddAccountWidgetSvg from '@/assets/widget-svgs/AddAccountWidgetSVG';
-import LongInvoiceWidget from '@/assets/widget-svgs/LongInvoiceWidget';
+import AddAccountWidgetSVG from '@/assets/widget-svgs/AddAccountWidgetSVG';
+import LongInvoiceWidgetSVG from '@/assets/widget-svgs/LongInvoiceWidgetSVG';
+import GlassComponent1SVG from '@/assets/widget-svgs/GlassComponent1SVG';
+import PartiallyPaidInvoicesWidgetSVG from '@/assets/widget-svgs/PartiallyPaidInvoicesWidgetSVG';
+import MacbookDisplayingInvoicesPage from '@/components/LandingPage/components/MacbookDisplayingInvoicesPageSVG';
 
 export default function Section1() {
 	return (
@@ -18,8 +20,8 @@ export default function Section1() {
 			{/* Main content */}
 			<div className='flex flex-col py-10 px-10'>
 				{/* Left section (text) */}
-				<div className='absolute z-10 top-70 left-20 flex flex-col gap-6'>
-					<h2 className='sm:text-6xl text-4xl'>
+				<div className='absolute z-10 top-60 left-20 flex flex-col gap-6'>
+					<h2 className='sm:text-6xl text-4xl leading-tight'>
 						Smarter Financial <br /> Solutions for Every <br /> Industry
 					</h2>
 					<p>
@@ -42,9 +44,11 @@ export default function Section1() {
 
 				{/* Right section (widgets) */}
 				{/* TODO: fix the widgets to be aligned exactly like in figma */}
-				<PartiallyPaidInvoicesWidgetSvg className='size-100 absolute top-60 right-0' />
-				<AddAccountWidgetSvg className='size-100 absolute bottom-40 left-133 w-fit backdrop-blur-xl' />
-				<LongInvoiceWidget className='size-20 absolute top-95 left-155 w-fit backdrop-blur-xl' />
+				<PartiallyPaidInvoicesWidgetSVG className='z-20 size-100 absolute top-60 right-0' />
+				<AddAccountWidgetSVG className='z-5 size-100 absolute bottom-40 left-150 w-fit backdrop-blur-xl' />
+				<LongInvoiceWidgetSVG className='z-5 size-20 absolute top-90 left-148 w-fit backdrop-blur-xl' />
+				<GlassComponent1SVG className='z-10 size-100 absolute bottom-40 -right-10' />
+				<MacbookDisplayingInvoicesPage className='z-10 absolute bottom-40 right-40' />
 
 				{/* Bottom section (text) */}
 				<p className='text-center absolute bottom-10 left-1/2 -translate-x-1/2'>

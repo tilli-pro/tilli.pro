@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 /** generated JSX with transform.tools -- @see https://transform.tools/svg-to-jsx */
 
-function PartiallyPaidInvoicesWidgetSvg({
+function PartiallyPaidInvoicesWidgetSVG({
 	className,
 	...props
 }: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string }) {
@@ -18,7 +18,7 @@ function PartiallyPaidInvoicesWidgetSvg({
 			xmlns='http://www.w3.org/2000/svg'
 			{...props}
 		>
-			<foreignObject x={-70} y={-70} width={543} height={308}>
+			<foreignObject x={-70} y={-70} width={500} height={240}>
 				<div
 					style={{
 						backdropFilter: 'blur(35px)',
@@ -79,4 +79,4 @@ function PartiallyPaidInvoicesWidgetSvg({
 	);
 }
 
-export default PartiallyPaidInvoicesWidgetSvg;
+export default PartiallyPaidInvoicesWidgetSVG;

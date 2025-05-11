@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 /** generated JSX with transform.tools -- @see https://transform.tools/svg-to-jsx */
 
-function AddAccountWidgetSvg({
+function AddAccountWidgetSVG({
 	className,
 	...props
 }: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string }) {
@@ -15,7 +15,6 @@ function AddAccountWidgetSvg({
 			width={273}
 			height={431}
 			viewBox='0 0 273 431'
-			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			{...props}
 		>
@@ -92,4 +91,4 @@ function AddAccountWidgetSvg({
 	);
 }
 
-export default AddAccountWidgetSvg;
+export default AddAccountWidgetSVG;
