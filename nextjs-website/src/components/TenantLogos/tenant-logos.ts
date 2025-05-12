@@ -1,6 +1,4 @@
-import Image from 'next/image';
-
-const tenantLogos = [
+export const tenantLogos = [
 	{
 		src: '/images/tenant-logos/washington-gas.png',
 		alt: 'Washington Gas',
@@ -30,13 +28,3 @@ const tenantLogos = [
 		alt: 'Freeman',
 	},
 ];
-
-export default function Section2() {
-	return (
-		<div className='flex w-full gap-4 justify-between items-center pl-6 py-8'>
-			{tenantLogos.map((logo, index) => (
-				<Image key={index} className='h-18 w-auto' src={logo.src} alt={logo.alt} width={150} height={0} />
-			))}
-		</div>
-	);
-}
