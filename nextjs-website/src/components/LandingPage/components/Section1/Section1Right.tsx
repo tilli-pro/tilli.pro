@@ -1,5 +1,5 @@
 import AddAccountWidgetSVG from '@/assets/widget-svgs/AddAccountWidgetSVG';
-import MacbookDisplayingInvoicesPage from '../MacbookDisplayingInvoicesPage';
+import MacbookDisplayingInvoicesPage from './MacbookDisplayingInvoicesPage';
 import GlassComponent1SVG from '@/assets/widget-svgs/GlassComponent1SVG';
 import LongInvoiceWidgetSVG from '@/assets/widget-svgs/LongInvoiceWidgetSVG';
 import PartiallyPaidInvoicesWidgetSVG from '@/assets/widget-svgs/PartiallyPaidInvoicesWidgetSVG';
