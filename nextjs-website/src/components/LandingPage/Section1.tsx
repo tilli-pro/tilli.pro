@@ -9,7 +9,7 @@ import AddAccountWidgetSVG from '@/assets/widget-svgs/AddAccountWidgetSVG';
 import LongInvoiceWidgetSVG from '@/assets/widget-svgs/LongInvoiceWidgetSVG';
 import GlassComponent1SVG from '@/assets/widget-svgs/GlassComponent1SVG';
 import PartiallyPaidInvoicesWidgetSVG from '@/assets/widget-svgs/PartiallyPaidInvoicesWidgetSVG';
-import MacbookDisplayingInvoicesPage from '@/components/LandingPage/components/MacbookDisplayingInvoicesPageSVG';
+import MacbookDisplayingInvoicesPage from '@/components/LandingPage/components/MacbookDisplayingInvoicesPage';
 
 export default function Section1() {
 	return (
@@ -33,7 +33,7 @@ export default function Section1() {
 							className='placeholder:text-[#D9D9D9] w-xs rounded-full border border-[#D9D9D9] bg-white/50'
 							placeholder='Enter email address'
 						/>
-						<Button className='absolute right-0 bottom-0 rounded-full rounded-l-none [background:var(--gradient-light-blue)]'>
+						<Button className='absolute right-0 bottom-0 rounded-full rounded-l-none [background:var(--gradient-sign-up-btn-in-section-1)]'>
 							Sign up
 						</Button>
 					</div>
