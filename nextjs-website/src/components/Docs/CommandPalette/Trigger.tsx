@@ -12,12 +12,12 @@ export default function CommandPaletteTrigger({ setOpen }: CommandPaletteTrigger
 	return (
 		<Button
 			onClick={openCommandPalette}
-			className='hidden h-8 justify-between border px-2 py-4 text-muted-foreground hover:bg-border hover:text-primary sm:flex'
+			className='hidden h-8 justify-between w-70 border px-2 py-4 text-muted-foreground hover:bg-border hover:text-primary sm:flex'
 			variant='ghost'
 		>
 			<div className='flex items-center'>
 				<SearchIcon className='size-5' />
-				<span className='ml-2 mr-10'>Search documentation...</span>
+				<span className='ml-2 mr-2'>Search documentation...</span>
 			</div>
 
 			<KeyboardShortcut keys={['⌘ K']} className='bg-border py-0.5' />
