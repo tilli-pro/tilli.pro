@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
-import Section1 from '@/components/LandingPage/Section1';
-import TenantLogos from '@/components/TenantLogos';
+import Section1 from '@/components/LandingPage/components/Section1';
+import TenantLogos from '@/components/LandingPage/components/TenantLogos';
 
 export default async function LandingPage() {
 	return (
