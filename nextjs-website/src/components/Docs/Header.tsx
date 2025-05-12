@@ -5,7 +5,7 @@ import Link from 'next/link';
 // import { useTheme } from 'next-themes';
 import TiiliSVG from '@/assets/branding/TiiliSVG';
 import DocsTextSVG from './assets/header/svgs/DocsTextSVG';
-import DocsSearchBar from './SearchBar';
+import DocsCommandPalette from './CommandPalette';
 
 export default function DevDocsHeader() {
 	// const { theme, setTheme } = useTheme();
@@ -16,12 +16,12 @@ export default function DevDocsHeader() {
 				{/* Logo and Docs */}
 				<div className='flex items-center gap-2'>
 					<TiiliSVG fill='#000' />
-					<DocsTextSVG className='' />
+					<DocsTextSVG />
 				</div>
 
 				{/* Actions */}
 				<div className='flex items-center gap-2'>
-					<DocsSearchBar />
+					<DocsCommandPalette />
 					<Link href='https://github.com/tilli-pro' target='_blank' rel='noopener noreferrer' aria-label='GitHub'>
 						<GithubLogoSVG className='size-7' />
 					</Link>
