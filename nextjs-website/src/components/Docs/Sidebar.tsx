@@ -37,7 +37,11 @@ export function DocsSidebar() {
 				{/* Home (collapsible) */}
 				<Accordion type='single' collapsible defaultValue='home'>
 					<AccordionItem value='home' className='border-none px-6'>
-						<AccordionTrigger className='font-medium !no-underline justify-start' displayChevron={false}>
+						<AccordionTrigger
+							className='font-medium !no-underline justify-start'
+							displayChevron={false}
+							rotateSVG={false}
+						>
 							<HomeIcon className='size-5' />
 							Home
 						</AccordionTrigger>
