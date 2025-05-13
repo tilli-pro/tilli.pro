@@ -6,6 +6,7 @@ import NudgeSVG from '@/assets/branding/NudgeSVG';
 import TillipaySVG from '@/assets/branding/TillipaySVG';
 import TilliUSVG from '@/assets/branding/TilliUSVG';
 import { cn } from '@/lib/utils';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const mainItems = [
 	{ title: 'Introduction', url: '/docs/introduction' },
@@ -30,32 +31,36 @@ export function DocsSidebar() {
 
 	return (
 		<Sidebar className='sticky font-inter'>
-			<SidebarContent className='bg-white py-4 space-y-4'>
+			<SidebarContent className='bg-white py-4'>
 				<DocsCommandPalette variant='sidebar' />
 
-				{/* Home (active hardcoded) */}
-				<div className='space-y-2 px-6'>
-					<div className='flex items-center gap-4 font-medium'>
-						<HomeIcon className='size-5' />
-						Home
-					</div>
-					<div className='ml-2 border-l-2 border-foreground pl-5 flex flex-col gap-1'>
-						{mainItems.map(({ title, url }) => (
-							<Link
-								key={url}
-								href={url}
-								className={cn(
-									'rounded-md px-2 py-1 text-sm transition',
-									active === title ? activeGradient : 'hover:bg-muted'
-								)}
-							>
-								{title}
-							</Link>
-						))}
-					</div>
-				</div>
+				{/* Home (collapsible) */}
+				<Accordion type='single' collapsible defaultValue='home'>
+					<AccordionItem value='home' className='border-none px-6'>
+						<AccordionTrigger className='font-medium !no-underline justify-start' displayChevron={false}>
+							<HomeIcon className='size-5' />
+							Home
+						</AccordionTrigger>
+						<AccordionContent className='pl-1'>
+							<div className='border-l-2 border-foreground pl-5 flex flex-col gap-1 ml-1'>
+								{mainItems.map(({ title, url }) => (
+									<Link
+										key={url}
+										href={url}
+										className={cn(
+											'rounded-md px-2 py-1 text-sm transition',
+											active === title ? activeGradient : 'hover:bg-muted'
+										)}
+									>
+										{title}
+									</Link>
+								))}
+							</div>
+						</AccordionContent>
+					</AccordionItem>
+				</Accordion>
 
-				{/* Other Sections (not active hardcoded) */}
+				{/* Other Sections (TODO: not collapsible as of rn and inactive is hardcoded) */}
 				<div className='flex flex-col gap-4 text-foreground px-6'>
 					{bottomItems.map(({ label, icon: Icon, extraProps }) => (
 						<div key={label} className='flex items-center gap-4 cursor-default'>

@@ -4,7 +4,7 @@ import { KeyboardShortcut } from './KeyboardShortcut';
 
 const variantsConfig = {
 	header: {
-		buttonClassName: 'hidden h-8 justify-between w-70 border px-2 py-4 hover:bg-border hover:text-primary sm:flex',
+		buttonClassName: 'hidden h-8 justify-between w-70 border px-2 py-4 hover:bg-border sm:flex',
 		searchIconClassName: 'size-5',
 		keyboardShortcutClassName: 'bg-border py-0.5',
 		keys: ['⌘ K'],
