@@ -5,6 +5,7 @@ import DocsCommandPalette from './CommandPalette';
 import NudgeSVG from '@/assets/branding/NudgeSVG';
 import TillipaySVG from '@/assets/branding/TillipaySVG';
 import TilliUSVG from '@/assets/branding/TilliUSVG';
+import { cn } from '@/lib/utils';
 
 const mainItems = [
 	{ title: 'Introduction', url: '/docs/introduction' },
@@ -12,6 +13,9 @@ const mainItems = [
 	{ title: 'Page', url: '/docs/page' },
 	{ title: 'Page', url: '/docs/page-2' },
 ];
+
+const activeGradient =
+	'bg-[linear-gradient(106deg,_rgba(108,239,239,0.10)_0%,_rgba(70,72,255,0.10)_65.07%,_rgba(113,47,255,0.10)_100%)]';
 
 export function DocsSidebar() {
 	// TODO get active tab from URL
@@ -33,9 +37,10 @@ export function DocsSidebar() {
 							<Link
 								key={item.url}
 								href={item.url}
-								className={`rounded-md px-2 py-1 text-sm font-medium transition
-                  ${active === item.title ? 'bg-gradient-to-r from-[#bd73a0] to-[#ffffff] text-black' : 'hover:bg-muted'}
-                `}
+								className={cn(
+									'rounded-md px-2 py-1 text-sm transition',
+									active === item.title ? activeGradient : 'hover:bg-muted'
+								)}
 							>
 								{item.title}
 							</Link>
@@ -44,21 +49,21 @@ export function DocsSidebar() {
 				</div>
 
 				{/* Lower Sections */}
-				<div className='flex flex-col gap-4 text-muted-foreground'>
+				<div className='flex flex-col gap-4 text-foreground'>
 					<div className='flex items-center gap-4 cursor-default'>
-						<NudgeSVG className='size-5' />
+						<NudgeSVG className='size-5 text-foreground' />
 						Nudge
 					</div>
 					<div className='flex items-center gap-4 cursor-default'>
-						<TillipaySVG className='size-5' />
+						<TillipaySVG className='size-5 text-foreground' />
 						Tillipay
 					</div>
 					<div className='flex items-center gap-4 cursor-default'>
-						<TilliUSVG className='size-5' fill='#A6A6A6' />
+						<TilliUSVG className='size-5 text-foreground' fill='#A6A6A6' />
 						tilliX
 					</div>
 					<div className='flex items-center gap-4 cursor-default'>
-						<HelpCircleIcon className='size-5' />
+						<HelpCircleIcon className='size-5 text-foreground' />
 						Help Center
 					</div>
 				</div>
