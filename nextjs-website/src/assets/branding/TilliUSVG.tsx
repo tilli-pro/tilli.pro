@@ -4,7 +4,11 @@ import { cn } from '@/lib/utils';
 
 /** generated JSX with transform.tools -- @see https://transform.tools/svg-to-jsx */
 
-function ULogo({ className, ...props }: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string }) {
+function TilliUSVG({
+	className,
+	fill = '#fff',
+	...props
+}: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string; fill?: string }) {
 	return (
 		<svg
 			className={cn('h-full w-auto size-14', className)}
@@ -15,13 +19,13 @@ function ULogo({ className, ...props }: JSX.IntrinsicAttributes & SVGProps<SVGSV
 			fill='none'
 			{...props}
 		>
-			<path d='M23.677.5l.163 13.493c.102 8.37-9.091 8.46-9.091 8.46l-.187-15.46L23.677.5z' fill='#fff' />
+			<path d='M23.677.5l.163 13.493c.102 8.37-9.091 8.46-9.091 8.46l-.187-15.46L23.677.5z' fill={fill} />
 			<path
 				d='M9.224 3.078l.172 14.238c.071 5.89 5.387 5.091 5.387 5.091s-.181 4.916-5.265 4.98c-5.084.062-9.225-2.588-9.296-8.479L.109 9.583l9.115-6.505z'
-				fill='#fff'
+				fill={fill}
 			/>
 		</svg>
 	);
 }
 
-export default ULogo;
+export default TilliUSVG;

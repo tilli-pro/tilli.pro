@@ -1,4 +1,4 @@
-import ULogo from '@/assets/branding/ULogo';
+import ULogo from '@/assets/branding/TilliUSVG';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverTrigger, PopoverContent } from '@/components/ui/popover';
 

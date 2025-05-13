@@ -1,7 +1,10 @@
-import { HomeIcon, ZapIcon, CreditCardIcon, ShieldIcon, HelpCircleIcon } from 'lucide-react';
+import { HomeIcon, HelpCircleIcon } from 'lucide-react';
 import { Sidebar, SidebarContent } from '@/components/ui/sidebar';
 import Link from 'next/link';
 import DocsCommandPalette from './CommandPalette';
+import NudgeSVG from '@/assets/branding/NudgeSVG';
+import TillipaySVG from '@/assets/branding/TillipaySVG';
+import TilliUSVG from '@/assets/branding/TilliUSVG';
 
 const mainItems = [
 	{ title: 'Introduction', url: '/docs/introduction' },
@@ -15,17 +18,17 @@ export function DocsSidebar() {
 	const active = 'Introduction';
 
 	return (
-		<Sidebar className='sticky p-4 font-inter text-sm'>
-			<SidebarContent className='bg-white'>
+		<Sidebar className='sticky font-inter'>
+			<SidebarContent className='bg-white py-4 px-6 space-y-4'>
 				<DocsCommandPalette />
 
 				{/* Main Navigation */}
-				<div className='mb-6'>
-					<div className='flex items-center gap-2 px-4 pb-2 font-medium'>
+				<div className='space-y-2'>
+					<div className='flex items-center gap-4 font-medium'>
 						<HomeIcon className='size-5' />
 						Home
 					</div>
-					<div className='ml-7 border-l-2 border-foreground pl-3 flex flex-col gap-1'>
+					<div className='ml-2 border-l-2 border-foreground pl-5 flex flex-col gap-1'>
 						{mainItems.map((item) => (
 							<Link
 								key={item.url}
@@ -41,21 +44,21 @@ export function DocsSidebar() {
 				</div>
 
 				{/* Lower Sections */}
-				<div className='flex flex-col gap-1 text-muted-foreground'>
-					<div className='flex items-center gap-2 py-1 cursor-default'>
-						<ZapIcon className='size-4' />
+				<div className='flex flex-col gap-4 text-muted-foreground'>
+					<div className='flex items-center gap-4 cursor-default'>
+						<NudgeSVG className='size-5' />
 						Nudge
 					</div>
-					<div className='flex items-center gap-2 py-1 cursor-default'>
-						<CreditCardIcon className='size-4' />
+					<div className='flex items-center gap-4 cursor-default'>
+						<TillipaySVG className='size-5' />
 						Tillipay
 					</div>
-					<div className='flex items-center gap-2 py-1 cursor-default'>
-						<ShieldIcon className='size-4' />
+					<div className='flex items-center gap-4 cursor-default'>
+						<TilliUSVG className='size-5' fill='#A6A6A6' />
 						tilliX
 					</div>
-					<div className='flex items-center gap-2 py-1 cursor-default'>
-						<HelpCircleIcon className='size-4' />
+					<div className='flex items-center gap-4 cursor-default'>
+						<HelpCircleIcon className='size-5' />
 						Help Center
 					</div>
 				</div>
