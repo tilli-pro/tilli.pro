@@ -1,18 +1,25 @@
 import { cn } from '@/lib/utils';
+import { ReactNode } from 'react';
 
 interface KeyboardShortcutProps {
-	keys: string[];
+	keys: string[] | ReactNode;
 	className?: string;
 }
 
 export function KeyboardShortcut({ keys, className }: KeyboardShortcutProps) {
-	return (
-		<div className='flex items-center gap-1'>
-			{keys.map((key) => (
-				<kbd key={key} className={cn('rounded border bg-muted px-1.5 font-mono text-xs', className)}>
-					{key}
-				</kbd>
-			))}
-		</div>
-	);
+	const kbdClass = cn('rounded border bg-muted px-1.5 font-mono text-xs', className);
+
+	if (Array.isArray(keys)) {
+		return (
+			<div className='flex items-center gap-1'>
+				{keys.map((key) => (
+					<kbd key={key} className={kbdClass}>
+						{key}
+					</kbd>
+				))}
+			</div>
+		);
+	}
+
+	return <kbd className={kbdClass}>{keys}</kbd>;
 }
