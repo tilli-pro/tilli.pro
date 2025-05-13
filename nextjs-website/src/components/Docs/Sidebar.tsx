@@ -14,11 +14,18 @@ const mainItems = [
 	{ title: 'Page', url: '/docs/page-2' },
 ];
 
+const bottomItems = [
+	{ label: 'Nudge', icon: NudgeSVG },
+	{ label: 'Tillipay', icon: TillipaySVG },
+	{ label: 'tilliX', icon: TilliUSVG, extraProps: { fill: '#A6A6A6' } },
+	{ label: 'Help Center', icon: HelpCircleIcon },
+];
+
 const activeGradient =
 	'bg-[linear-gradient(106deg,_rgba(108,239,239,0.10)_0%,_rgba(70,72,255,0.10)_65.07%,_rgba(113,47,255,0.10)_100%)]';
 
 export function DocsSidebar() {
-	// TODO get active tab from URL
+	// TODO: Get the active item from the URL
 	const active = 'Introduction';
 
 	return (
@@ -26,46 +33,36 @@ export function DocsSidebar() {
 			<SidebarContent className='bg-white py-4 px-6 space-y-4'>
 				<DocsCommandPalette />
 
-				{/* Main Navigation */}
+				{/* Home (active hardcoded) */}
 				<div className='space-y-2'>
 					<div className='flex items-center gap-4 font-medium'>
 						<HomeIcon className='size-5' />
 						Home
 					</div>
 					<div className='ml-2 border-l-2 border-foreground pl-5 flex flex-col gap-1'>
-						{mainItems.map((item) => (
+						{mainItems.map(({ title, url }) => (
 							<Link
-								key={item.url}
-								href={item.url}
+								key={url}
+								href={url}
 								className={cn(
 									'rounded-md px-2 py-1 text-sm transition',
-									active === item.title ? activeGradient : 'hover:bg-muted'
+									active === title ? activeGradient : 'hover:bg-muted'
 								)}
 							>
-								{item.title}
+								{title}
 							</Link>
 						))}
 					</div>
 				</div>
 
-				{/* Lower Sections */}
+				{/* Other Sections (not active hardcoded) */}
 				<div className='flex flex-col gap-4 text-foreground'>
-					<div className='flex items-center gap-4 cursor-default'>
-						<NudgeSVG className='size-5 text-foreground' />
-						Nudge
-					</div>
-					<div className='flex items-center gap-4 cursor-default'>
-						<TillipaySVG className='size-5 text-foreground' />
-						Tillipay
-					</div>
-					<div className='flex items-center gap-4 cursor-default'>
-						<TilliUSVG className='size-5 text-foreground' fill='#A6A6A6' />
-						tilliX
-					</div>
-					<div className='flex items-center gap-4 cursor-default'>
-						<HelpCircleIcon className='size-5 text-foreground' />
-						Help Center
-					</div>
+					{bottomItems.map(({ label, icon: Icon, extraProps }) => (
+						<div key={label} className='flex items-center gap-4 cursor-default'>
+							<Icon className='size-5 text-foreground' {...(extraProps || {})} />
+							{label}
+						</div>
+					))}
 				</div>
 			</SidebarContent>
 		</Sidebar>
