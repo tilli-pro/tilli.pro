@@ -22,7 +22,7 @@ export default function Header() {
 						<Link href='/industries'>Industries</Link>
 					</li>
 					<li>
-						<Link href='/developers'>Developers</Link>
+						<Link href='/docs'>Developers</Link>
 					</li>
 					<li>
 						<Link href='/resources'>Resources</Link>

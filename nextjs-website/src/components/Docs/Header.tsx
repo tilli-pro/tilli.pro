@@ -11,8 +11,8 @@ export default function DocsHeader() {
 	// const { theme, setTheme } = useTheme();
 
 	return (
-		<header className='w-full border-b bg-background'>
-			<div className='flex items-center justify-between px-6 py-3 mx-auto max-w-7xl'>
+		<header className='w-full border-b'>
+			<div className='flex items-center justify-between px-6 py-3 mx-auto max-w-[95rem]'>
 				{/* Left - Logo and Docs SVG */}
 				<div className='flex items-center gap-4'>
 					<TiiliSVG fill='#000' />
