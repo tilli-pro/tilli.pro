@@ -4,12 +4,16 @@ import { CommandInput, CommandList, CommandItem, CommandDialog } from '@/compone
 import { useCommandPalette } from './useCommandPalette';
 import CommandPaletteTrigger from './Trigger';
 
-export default function DocsCommandPalette() {
+interface CommandPaletteProps {
+	variant?: 'header' | 'sidebar';
+}
+
+export default function DocsCommandPalette({ variant = 'header' }: CommandPaletteProps) {
 	const { open, setOpen } = useCommandPalette();
 
 	return (
 		<>
-			<CommandPaletteTrigger setOpen={setOpen} />
+			<CommandPaletteTrigger setOpen={setOpen} variant={variant} />
 
 			{/* dialog */}
 			<CommandDialog open={open} onOpenChange={setOpen}>

@@ -30,11 +30,11 @@ export function DocsSidebar() {
 
 	return (
 		<Sidebar className='sticky font-inter'>
-			<SidebarContent className='bg-white py-4 px-6 space-y-4'>
-				<DocsCommandPalette />
+			<SidebarContent className='bg-white py-4 space-y-4'>
+				<DocsCommandPalette variant='sidebar' />
 
 				{/* Home (active hardcoded) */}
-				<div className='space-y-2'>
+				<div className='space-y-2 px-6'>
 					<div className='flex items-center gap-4 font-medium'>
 						<HomeIcon className='size-5' />
 						Home
@@ -56,7 +56,7 @@ export function DocsSidebar() {
 				</div>
 
 				{/* Other Sections (not active hardcoded) */}
-				<div className='flex flex-col gap-4 text-foreground'>
+				<div className='flex flex-col gap-4 text-foreground px-6'>
 					{bottomItems.map(({ label, icon: Icon, extraProps }) => (
 						<div key={label} className='flex items-center gap-4 cursor-default'>
 							<Icon className='size-5 text-foreground' {...(extraProps || {})} />
