@@ -20,7 +20,7 @@ export default function DocsHeader() {
 				</div>
 
 				{/* Right - Command Palette Trigger, GitHub Link, and Theme Toggle */}
-				<div className='flex items-center justify-between gap-10'>
+				<div className='flex items-center justify-between gap-8'>
 					<DocsCommandPalette />
 
 					<div className='flex items-center gap-2'>
@@ -32,9 +32,10 @@ export default function DocsHeader() {
 							size='icon'
 							// onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
 							aria-label='Toggle theme'
+							className='text-black'
 						>
 							{/* {theme === 'dark' ? <Sun className='size-5' /> : <Moon className='size-5' />} */}
-							<MoonIcon className='size-5' />
+							<MoonIcon className='size-5' strokeWidth={1.5} />
 						</Button>
 					</div>
 				</div>

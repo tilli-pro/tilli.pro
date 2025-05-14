@@ -11,11 +11,11 @@ const variantsConfig = {
 	},
 	sidebar: {
 		buttonClassName: 'mx-auto w-fit p-0 text-foreground-muted font-inter hover:bg-transparent flex',
-		searchIconClassName: 'size-4',
+		searchIconClassName: 'size-4 stroke-[1.5]',
 		keyboardShortcutClassName: 'bg-white py-0.5 text-sm ml-1',
 		keys: (
 			<div className='flex items-center gap-2 justify-between'>
-				<span>⌘</span>
+				<span className='font-light'>⌘</span>
 				<span>K</span>
 			</div>
 		),
