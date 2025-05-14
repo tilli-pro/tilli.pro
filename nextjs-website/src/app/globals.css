@@ -5,6 +5,7 @@
 
 @theme inline {
 	--color-background: var(--background);
+	--color-off-black: var(--off-black);
 	--color-foreground: var(--foreground);
 	--color-foreground-muted: var(--foreground-muted);
 	--font-sans: var(--font-sora);
@@ -48,6 +49,7 @@
 :root {
 	--radius: 0.625rem;
 	--background: oklch(1 0 0);
+	--off-black: #060606;
 	/* --foreground: oklch(0.145 0 0); */
 	--foreground: #a9a9a9;
 	--foreground-muted: #d9d9d9;
