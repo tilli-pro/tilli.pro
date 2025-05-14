@@ -141,14 +141,15 @@
 			rgba(70, 72, 255, 0.8) 65.07%,
 			rgba(113, 47, 255, 0.8) 100%
 		);
+		--gradient-button-shadow: linear-gradient(90deg, #f2f2f2 0%, #fff 100%);
 	}
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+	* {
+		@apply border-border outline-ring/50;
 	}
-  body {
-    @apply bg-background text-foreground;
+	body {
+		@apply bg-background text-foreground;
 	}
 }
