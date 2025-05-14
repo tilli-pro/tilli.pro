@@ -6,22 +6,26 @@ import Terminal2SVG from './assets/introduction/Terminal2SVG';
 
 export default function Section1() {
 	return (
-		<div className='text-black flex gap-10 p-20'>
+		<div className='text-black flex gap-20 py-20 px-10'>
 			{/* left */}
-			<div className='space-y-5 flex-1'>
+			<div className='space-y-6 flex-1 max-w-lg'>
 				<h2 className='text-foreground'>Welcome Developers 👋</h2>
-				<h2 className='text-6xl'>Build with tilli</h2>
+				<h2 className='text-7xl'>Build with tilli</h2>
 				<p className='text-lg'>The tools you need to integrate billing, payments, and messaging—fast.</p>
-				<p className='text-lg'>Building blocks for developers</p>
-				<p>
-					Build, customize, and scale with Tilli&apos;s modern APIs for billing, payments, and communications. Whether
-					you&apos;re integrating TilliX, Monay, or Nudge, our platform is built to get you up and running—fast.
-				</p>
+				<div className='space-y-2'>
+					<p className='text-lg'>Building blocks for developers</p>
+					<p className='text-[#060606]'>
+						Build, customize, and scale with Tilli&apos;s modern APIs for billing, payments, and communications.
+						Whether you&apos;re integrating TilliX, Monay, or Nudge, our platform is built to get you up and
+						running—fast.
+					</p>
+				</div>
 			</div>
+
 			{/* right */}
 			<div className='flex-1 relative'>
 				{/* background */}
-				<div className='relative rounded-xl overflow-hidden'>
+				<div className='relative h-full w-[85%] rounded-xl overflow-hidden'>
 					<GradientBackgroundSVG className='size-full z-10' />
 					<Image
 						src='/images/Noise.png'
@@ -32,11 +36,11 @@ export default function Section1() {
 					/>
 				</div>
 				{/* widgets absolutely positioned */}
-				<span className='text-7xl z-50 absolute -top-5 -left-8'>✨</span>
-				<span className='text-7xl z-50 absolute bottom-30 -right-8'>🖥️</span>
-				<AppsInDocSVG className='size-fit z-30 absolute top-0 right-0' />
-				<Terminal1SVG className='size-125 z-5 absolute -top-18 left-5' />
-				<Terminal2SVG className='size-100 z-30 absolute -bottom-36 -right-15' />
+				<span className='text-7xl z-50 absolute -top-5 -left-8 blur-[2px]'>✨</span>
+				<span className='text-7xl z-50 absolute bottom-27 right-19 blur-[2px]'>🖥️</span>
+				<AppsInDocSVG className='size-fit z-30 absolute top-0 right-28' />
+				<Terminal1SVG className='size-125 z-5 absolute -top-19 left-5' />
+				<Terminal2SVG className='size-100 z-30 absolute -bottom-40 right-15' />
 			</div>
 		</div>
 	);
