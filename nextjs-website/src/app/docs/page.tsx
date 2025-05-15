@@ -1,13 +1,15 @@
 import Section1 from '@/components/Docs/Introduction/Section1';
 import Section2 from '@/components/Docs/Introduction/Section2';
 import Section3 from '@/components/Docs/Introduction/Section3';
-
+import Section4 from '@/components/Docs/Introduction/Section4';
 export default function DocsPage() {
 	return (
-		<div className='pt-10'>
+		<div className='pt-10 space-y-20'>
 			<Section1 />
 			<Section2 />
 			<Section3 />
+			<hr className='border-[#F4F4F4]' />
+			<Section4 />
 		</div>
 	);
 }

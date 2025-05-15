@@ -5,7 +5,7 @@ import FeatureItem from './FeatureItem';
 
 export default function Section3() {
 	return (
-		<section className='px-4 sm:px-6 lg:px-10 py-10 sm:py-16 lg:py-20 text-off-black'>
+		<section className='px-4 sm:px-6 lg:px-10 text-off-black'>
 			{/* Product Tabs */}
 			<div className='mb-4 sm:mb-6 flex flex-col gap-3 sm:gap-4'>
 				<span className='text-black/50 text-base sm:text-lg'>SEE IT IN ACTION</span>
@@ -13,9 +13,9 @@ export default function Section3() {
 					{productTabs.map((label) => (
 						<Button
 							key={label}
-							size='default'
+							size='lg'
 							variant='outline'
-							className='rounded-full border-off-black shadow-sm text-off-black text-sm sm:text-base whitespace-nowrap'
+							className='rounded-full border-off-black shadow-sm text-off-black whitespace-nowrap'
 						>
 							{label}
 						</Button>
