@@ -6,10 +6,10 @@ export default function Section4() {
 	return (
 		<div className='flex flex-col gap-4 justify-center items-center'>
 			<div className='flex flex-col xl:flex-row gap-4'>
-				<Widget1SVG />
-				<Widget2SVG />
+				<Widget1SVG className='sm:max-w-xl w-full' />
+				<Widget2SVG className='sm:max-w-xl w-full' />
 			</div>
-			<Widget3SVG />
+			<Widget3SVG className='sm:max-w-3xl w-full' />
 		</div>
 	);
 }

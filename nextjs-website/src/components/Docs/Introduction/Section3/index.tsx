@@ -38,7 +38,7 @@ export default function Section3() {
 				</div>
 
 				{/* Image */}
-				<div className='flex flex-1 justify-center items-center mt-4 xl:mt-0'>
+				<div className='flex flex-1 justify-center items-center mt-4'>
 					<Image
 						src='/images/docs/introduction/build-your-payment-integration-with-tillipay.png'
 						alt='Tillipay integration diagram'
