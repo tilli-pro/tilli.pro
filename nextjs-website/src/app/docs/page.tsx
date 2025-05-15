@@ -16,6 +16,7 @@ export default function DocsPage() {
 			<Section4 />
 			<Section5 />
 			<Section6 />
+			<hr />
 			<DocsPageFooter />
 		</div>
 	);

@@ -1,7 +1,6 @@
 import { ArrowUpRightIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import Link from 'next/link';
+import EmailSignUpInput from '@/components/EmailSignUpInput';
 
 export default function Section1Left() {
 	return (
@@ -12,15 +11,7 @@ export default function Section1Left() {
 			<p>
 				Simplify payments, reduce processing time, and manage invoices <br /> effortlessly—all in one place with tilliX.
 			</p>
-			<div className='relative w-fit'>
-				<Input
-					className='placeholder:text-[#D9D9D9] w-xs rounded-full border border-[#D9D9D9] bg-white/50'
-					placeholder='Enter email address'
-				/>
-				<Button className='absolute right-0 bottom-0 rounded-full rounded-l-none [background:var(--gradient-sign-up-btn-in-section-1)]'>
-					Sign up
-				</Button>
-			</div>
+			<EmailSignUpInput />
 			<Link href='/schedule' className='flex items-center gap-2'>
 				Schedule a time with our product specialist <ArrowUpRightIcon className='size-4' />
 			</Link>

@@ -3,10 +3,10 @@ import DocsTextSVG from './assets/header/svgs/DocsTextSVG';
 import Link from 'next/link';
 import GithubLogoSVG from './assets/header/svgs/GithubLogoSVG';
 import { MoonIcon } from 'lucide-react';
-
+import EmailSignUpInput from '@/components/EmailSignUpInput';
 export default function DocsPageFooter() {
 	return (
-		<div className='bg-pink-100 text-off-black w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
+		<div className='text-off-black w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6'>
 			{/* left */}
 			<div className='flex flex-col gap-10'>
 				<div className='flex items-center gap-6'>
@@ -33,6 +33,11 @@ export default function DocsPageFooter() {
 				</div>
 			</div>
 			{/* right */}
+			<div className='flex flex-col gap-2 justify-center'>
+				<p>Sign up for developer updates:</p>
+				<p className='text-sm mb-2'>You can unsubscribe anytime. These are not marketing emails</p>
+				<EmailSignUpInput />
+			</div>
 		</div>
 	);
 }
