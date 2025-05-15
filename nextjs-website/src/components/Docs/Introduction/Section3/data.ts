@@ -35,4 +35,4 @@ export const features: Feature[] = [
 	},
 ];
 
-export const productTabs = ['Monay', 'Nudge', 'tilliX'];
+export const productTabs = ['Tillipay', 'Nudge', 'tilliX'];

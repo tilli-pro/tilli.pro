@@ -6,11 +6,11 @@ import Terminal2SVG from './assets/introduction/Terminal2SVG';
 
 export default function Section1() {
 	return (
-		<div className='text-black flex gap-20 py-20 px-10'>
+		<div className='text-black flex flex-col lg:flex-row gap-20 py-20 px-10'>
 			{/* left */}
-			<div className='space-y-6 flex-1 max-w-lg'>
+			<div className='space-y-6 flex-1 max-w-sm sm:max-w-lg'>
 				<h2 className='text-foreground'>Welcome Developers 👋</h2>
-				<h2 className='text-7xl'>Build with tilli</h2>
+				<h2 className='text-4xl sm:text-7xl'>Build with tilli</h2>
 				<p className='text-lg'>The tools you need to integrate billing, payments, and messaging—fast.</p>
 				<div className='space-y-2'>
 					<p className='text-lg'>Building blocks for developers</p>
@@ -23,7 +23,7 @@ export default function Section1() {
 			</div>
 
 			{/* right */}
-			<div className='flex-1 relative'>
+			<div className='flex-1 relative hidden xl:block'>
 				{/* background */}
 				<div className='relative h-full w-[85%] rounded-xl overflow-hidden'>
 					<GradientBackgroundSVG className='size-full z-10' />
