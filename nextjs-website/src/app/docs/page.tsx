@@ -8,15 +8,18 @@ import DocsPageFooter from '@/components/Docs/Footer';
 
 export default function DocsPage() {
 	return (
-		<div className='pt-10 px-2 space-y-10 py-20'>
+		<div className='pt-10 px-2 space-y-20 py-20'>
 			<Section1 />
 			<Section2 />
+			<hr className='border-[#F4F4F4] my-20' />
 			<Section3 />
 			<hr className='border-[#F4F4F4] my-20' />
 			<Section4 />
+			<hr className='border-[#F4F4F4] my-20' />
 			<Section5 />
+			<hr className='border-[#F4F4F4] my-20' />
 			<Section6 />
-			<hr />
+			<hr className='border-foreground-muted' />
 			<DocsPageFooter />
 		</div>
 	);

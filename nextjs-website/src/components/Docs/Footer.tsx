@@ -4,6 +4,7 @@ import Link from 'next/link';
 import GithubLogoSVG from './assets/header/svgs/GithubLogoSVG';
 import { MoonIcon } from 'lucide-react';
 import EmailSignUpInput from '@/components/EmailSignUpInput';
+
 export default function DocsPageFooter() {
 	return (
 		<div className='text-off-black w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6'>
@@ -34,9 +35,9 @@ export default function DocsPageFooter() {
 			</div>
 			{/* right */}
 			<div className='flex flex-col gap-2 justify-center'>
-				<p>Sign up for developer updates:</p>
-				<p className='text-sm mb-2'>You can unsubscribe anytime. These are not marketing emails</p>
-				<EmailSignUpInput />
+				<p className='font-medium'>Sign up for developer updates:</p>
+				<p className='text-sm mb-4'>You can unsubscribe anytime. These are not marketing emails</p>
+				<EmailSignUpInput buttonSize='lg' inputClassName='h-10' />
 			</div>
 		</div>
 	);

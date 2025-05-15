@@ -6,7 +6,7 @@ import Terminal2SVG from './assets/introduction/Terminal2SVG';
 
 export default function Section1() {
 	return (
-		<div className='text-black flex flex-col lg:flex-row gap-20 py-20 px-10'>
+		<div className='text-black flex flex-col lg:flex-row gap-20 px-10 py-20'>
 			{/* left */}
 			<div className='space-y-6 flex-1 max-w-sm sm:max-w-lg'>
 				<h2 className='text-foreground'>Welcome Developers 👋</h2>
