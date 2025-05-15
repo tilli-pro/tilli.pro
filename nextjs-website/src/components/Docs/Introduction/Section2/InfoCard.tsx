@@ -23,9 +23,9 @@ export default function InfoCard({ emoji, title, subtitle, items, cta }: InfoCar
 				))}
 			</ul>
 
-			<div className='mt-auto font-medium flex items-center gap-1 cursor-pointer hover:text-[#448DE6]'>
+			<div className='mt-auto group font-medium flex items-center gap-1 cursor-pointer hover:text-[#448DE6]'>
 				{cta}
-				{title === 'Quick Start' && <LongArrowUpRightSVG className='ml-2' />}
+				{title === 'Quick Start' && <LongArrowUpRightSVG className='ml-2' stroke='currentColor' />}
 			</div>
 		</div>
 	);

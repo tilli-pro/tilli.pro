@@ -26,27 +26,22 @@ const popularRepos = [
 interface CardProps {
 	title: string;
 	subtitle: string;
-	items: { label: string; href: string; highlight?: boolean }[];
+	items: { label: string; href: string }[];
 }
 
 const Card = ({ title, subtitle, items }: CardProps) => {
 	return (
-		<div className='flex bg-[#FCFCFC] flex-col border border-foreground-muted rounded text-off-black shadow-sm p-6 min-w-0'>
+		<div className='flex bg-[#FCFCFC] hover:[background:var(--gradient-card-hover)] flex-col border border-foreground-muted rounded text-off-black shadow-sm p-6 min-w-0'>
 			<span className='text-foreground mb-2'>{subtitle}</span>
 			<h3 className='text-2xl mb-14'>{title}</h3>
 
 			<ul className='flex-1 space-y-4 mb-6'>
-				{items.map(({ label, href, highlight }, index) => (
+				{items.map(({ label, href }, index) => (
 					<Fragment key={label}>
 						<li>
-							<Link
-								className={`flex items-center justify-between px-4 group ${
-									highlight ? 'text-[#448DE6]' : 'text-black'
-								}`}
-								href={href}
-							>
+							<Link className='flex items-center justify-between px-4 group hover:text-[#448DE6]' href={href}>
 								<span>{label}</span>
-								<LongArrowUpRightSVG className='size-5 group-hover:text-[#448DE6]' />
+								<LongArrowUpRightSVG className='size-5' stroke='currentColor' />
 							</Link>
 						</li>
 						{index !== items.length - 1 && <hr className='border-foreground-muted py-1' />}
@@ -54,7 +49,7 @@ const Card = ({ title, subtitle, items }: CardProps) => {
 				))}
 			</ul>
 
-			<Button className='mt-10 bg-transparent' variant='outline'>
+			<Button className='mt-10 bg-transparent hover:[background:var(--gradient-card-button-hover)]' variant='outline'>
 				View All
 			</Button>
 		</div>

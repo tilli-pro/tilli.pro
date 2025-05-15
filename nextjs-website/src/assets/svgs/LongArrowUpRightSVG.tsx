@@ -4,7 +4,11 @@ import { cn } from '@/lib/utils';
 
 /** generated JSX with transform.tools -- @see https://transform.tools/svg-to-jsx */
 
-function LongArrowRightSVG({ className, ...props }: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string }) {
+function LongArrowRightSVG({
+	className,
+	stroke = '#060606',
+	...props
+}: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { stroke?: string; className?: string }) {
 	return (
 		<svg
 			className={cn('h-full w-auto', className)}
@@ -17,7 +21,7 @@ function LongArrowRightSVG({ className, ...props }: JSX.IntrinsicAttributes & SV
 		>
 			<path
 				d='M15 6.666l3.333 3.333L15 13.333M1.664 10h16.667'
-				stroke='#060606'
+				stroke={stroke}
 				strokeWidth={1.04167}
 				strokeLinecap='round'
 				strokeLinejoin='round'

@@ -144,6 +144,13 @@
 			rgba(113, 47, 255, 0.8) 100%
 		);
 		--gradient-button-shadow: linear-gradient(90deg, #f2f2f2 0%, #fff 100%);
+		--gradient-card-hover: linear-gradient(0deg, pink, rgba(255, 255, 255, 0.5) 100%); /* TODO: use the gradient from figma */
+		--gradient-card-button-hover: linear-gradient(
+			92deg,
+			rgba(190, 190, 190, 0.5) -12.04%,
+			rgba(190, 190, 190, 0.6) 43.07%,
+			rgba(190, 190, 190, 0.8) 98.19%
+		);
 	}
 }
 
@@ -154,4 +161,16 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+}
+
+/* globals.css or your base styles */
+
+.hover-gradient-card:hover {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+		radial-gradient(
+			423.32% 134.7% at -11.43% 31.88%,
+			rgba(0, 0, 0, 0.02) 3%,
+			rgba(0, 0, 0, 0.01) 31%,
+			rgba(0, 0, 0, 0.02) 81.5%
+		);
 }

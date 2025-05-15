@@ -6,8 +6,9 @@ import { cn } from '@/lib/utils';
 
 function LongArrowUpRightSVG({
 	className,
+	stroke = '#060606',
 	...props
-}: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string }) {
+}: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { stroke?: string; className?: string }) {
 	return (
 		<svg
 			className={cn('h-full w-auto', className)}
@@ -18,7 +19,7 @@ function LongArrowUpRightSVG({
 			fill='none'
 			{...props}
 		>
-			<g stroke='#060606' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round'>
+			<g stroke={stroke} strokeWidth={2} strokeLinecap='round' strokeLinejoin='round'>
 				<path d='M13.531 5h6v6M19.531 5l-14 14' />
 			</g>
 		</svg>
