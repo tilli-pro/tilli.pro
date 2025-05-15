@@ -1,4 +1,4 @@
-import LongArrowRightSVG from '@/assets/svgs/LongArrowRightSVG';
+import LongArrowUpRightSVG from '@/assets/svgs/LongArrowUpRightSVG';
 
 interface InfoCardProps {
 	emoji: string;
@@ -25,7 +25,7 @@ export default function InfoCard({ emoji, title, subtitle, items, cta }: InfoCar
 
 			<div className='mt-auto font-medium flex items-center gap-1 cursor-pointer hover:text-[#448DE6]'>
 				{cta}
-				{title === 'Quick Start' && <LongArrowRightSVG className='ml-2' />}
+				{title === 'Quick Start' && <LongArrowUpRightSVG className='ml-2' />}
 			</div>
 		</div>
 	);

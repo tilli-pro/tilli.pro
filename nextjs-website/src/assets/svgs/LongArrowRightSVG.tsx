@@ -4,26 +4,25 @@ import { cn } from '@/lib/utils';
 
 /** generated JSX with transform.tools -- @see https://transform.tools/svg-to-jsx */
 
-function LongArrowRightSVG({ className, ...props }: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string }) {
+function LongArrowUpRightSVG({
+	className,
+	...props
+}: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string }) {
 	return (
 		<svg
 			className={cn('h-full w-auto', className)}
 			xmlns='http://www.w3.org/2000/svg'
-			width={20}
-			height={20}
-			viewBox='0 0 20 20'
+			width={25}
+			height={24}
+			viewBox='0 0 25 24'
 			fill='none'
 			{...props}
 		>
-			<path
-				d='M15 6.666l3.333 3.333L15 13.333M1.664 10h16.667'
-				stroke='#060606'
-				strokeWidth={1.04167}
-				strokeLinecap='round'
-				strokeLinejoin='round'
-			/>
+			<g stroke='#060606' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round'>
+				<path d='M13.531 5h6v6M19.531 5l-14 14' />
+			</g>
 		</svg>
 	);
 }
 
-export default LongArrowRightSVG;
+export default LongArrowUpRightSVG;
