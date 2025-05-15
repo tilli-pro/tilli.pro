@@ -4,12 +4,17 @@ import { cn } from '@/lib/utils';
 
 /** generated JSX with transform.tools -- @see https://transform.tools/svg-to-jsx */
 
-function DocsTextSVG({ className, ...props }: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string }) {
+function DocsTextSVG({
+	className,
+	height = 28,
+	width = 119,
+	...props
+}: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement> & { className?: string; height?: number; width?: number }) {
 	return (
 		<svg
 			className={cn('h-full w-auto', className)}
-			width={119}
-			height={28}
+			width={width}
+			height={height}
 			viewBox='0 0 119 28'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
