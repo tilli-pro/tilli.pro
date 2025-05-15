@@ -3,6 +3,7 @@ import Section2 from '@/components/Docs/Introduction/Section2';
 import Section3 from '@/components/Docs/Introduction/Section3';
 import Section4 from '@/components/Docs/Introduction/Section4';
 import Section5 from '@/components/Docs/Introduction/Section5';
+import Section6 from '@/components/Docs/Introduction/Section6';
 
 export default function DocsPage() {
 	return (
@@ -13,6 +14,7 @@ export default function DocsPage() {
 			<hr className='border-[#F4F4F4] my-20' />
 			<Section4 />
 			<Section5 />
+			<Section6 />
 		</div>
 	);
 }
