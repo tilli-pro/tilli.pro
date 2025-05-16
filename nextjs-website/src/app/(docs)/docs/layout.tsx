@@ -1,9 +1,12 @@
 import { SidebarProvider } from '@/components/ui/sidebar';
 import { DocsSidebar } from '@/components/Docs/Sidebar';
 import DocsHeader from '@/components/Docs/Header';
+import "../../globals.css";
 
 export default function DocsLayout({ children }: { children: React.ReactNode }) {
 	return (
+		<html>
+			<body>
 		<SidebarProvider>
 			<div className='flex flex-col min-h-screen w-full'>
 				<DocsHeader />
@@ -13,5 +16,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
 				</div>
 			</div>
 		</SidebarProvider>
+		</body>
+		</html>
 	);
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Sora } from 'next/font/google';
-import './globals.css';
+import '../globals.css';
 import GlobalHotkeys from '@/hooks/GlobalHotkeys';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
