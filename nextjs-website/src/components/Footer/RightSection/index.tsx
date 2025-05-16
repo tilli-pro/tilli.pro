@@ -5,7 +5,7 @@ import { navColumns, bottomLinks } from './right-section';
 export default function RightSection() {
 	return (
 		<div className='flex flex-col justify-between flex-1'>
-			<div className='flex justify-between'>
+			<div className='md:flex md:justify-between grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-12'>
 				{navColumns.map((col) => (
 					<div key={col.title}>
 						<h4 className='text-white mb-3 text-lg'>{col.title}</h4>

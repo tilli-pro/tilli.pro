@@ -34,7 +34,7 @@ export default function LeftSection() {
 			</div>
 
 			{/* Bottom Section/Row */}
-			<div className='flex justify-between items-end justify-self-end'>
+			<div className='flex justify-between items-end gap-4 justify-self-end'>
 				{/* Social Links */}
 				<SocialLinks />
 
