@@ -10,7 +10,7 @@ export default function RightSection() {
 				{navColumns.map((col) => (
 					<div key={col.title}>
 						<h4 className='mb-3 text-lg'>{col.title}</h4>
-						<ul className='space-y-1 text-sm'>
+						<ul className='space-y-1 text-sm text-figma-gray-medium'>
 							{col.title === 'Developers'
 								? col.links.map((link, idx) =>
 										'extra' in link ? (
@@ -45,7 +45,7 @@ export default function RightSection() {
 				{/* Headquarters */}
 				<div className='text-right'>
 					<h4 className='font-semibold mb-2 text-xl'>Headquarters</h4>
-					<address className='not-italic text-foreground text-sm'>
+					<address className='not-italic text-figma-gray-medium text-sm'>
 						8260 Greensboro Dr,
 						<br />
 						Suite 270, McLean VA, 22102

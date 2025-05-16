@@ -1,16 +1,8 @@
 import SocialLinks from './RightSection/SocialLinks';
 import { ChevronRightIcon } from 'lucide-react';
 import Link from 'next/link';
-import TiiliSVG from '@/assets/branding/TiiliSVG';
 import TilliWordmark from '@/assets/branding/TilliWordmark';
-const description =
-	'We’re devoted to creating a global consumer environment that feels more personalized and connected than ever before. Through cloud-based, customer-centric tools, we’re revolutionizing CPaaS and payment processing landscapes to create avenues that help businesses and people connect, collaborate, and make payments in real-time.';
-
-const copyrightLinks = [
-	{ label: 'Terms', href: '/terms' },
-	{ label: 'Privacy', href: '/privacy' },
-	{ label: 'Cookies', href: '/cookies' },
-];
+import { copyrightLinks, description } from './data';
 
 export default function LeftSection() {
 	const thisYear = new Date().getFullYear();
@@ -24,7 +16,7 @@ export default function LeftSection() {
 				<TilliWordmark size={48} />
 
 				{/* Description */}
-				<p className='max-w-sm'>{description}</p>
+				<p className='max-w-sm text-figma-gray-medium'>{description}</p>
 
 				{/* Button */}
 				<Link href='/about' className='w-52 rounded-full bg-gradient-to-r from-[#448DE6] to-[#98B2E9] p-[1px]'>
@@ -41,15 +33,13 @@ export default function LeftSection() {
 				<SocialLinks />
 
 				{/* Copyright */}
-				<div className='text-xs flex flex-col mt-6 text-right  gap-1'>
+				<div className='text-xs flex flex-col mt-6 text-right text-figma-gray-medium gap-1'>
 					<span>© {thisYear} — Copyright</span>
 					<span>All Rights reserved</span>
 					<div className='row items-center justify-end gap-1'>
 						{copyrightLinks.map((link, idx) => (
 							<span key={link.label}>
-								<Link href={link.href}>
-									{link.label}
-								</Link>
+								<Link href={link.href}>{link.label}</Link>
 								{idx < copyrightLinks.length - 1 && <span className='mx-1'>|</span>}
 							</span>
 						))}
