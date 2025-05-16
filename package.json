@@ -1,0 +1,10 @@
+{
+	"type": "module",
+	"devDependencies": {
+		"@tilli-pro/eslint-config": "^0.3.7",
+		"commitlint": "^19.8.1",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.0.0",
+		"typescript": "^5.8.3"
+	}
+}

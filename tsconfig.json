@@ -1,0 +1,13 @@
+{
+  "extends": "./nextjs-website/tsconfig.json",
+  "include": [
+    "nextjs-website/**/*.ts",
+    "nextjs-website/**/*.tsx",
+    "studio-website/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "studio-website/**/*.js",
+    "studio-website/**/*.jsx",
+  ]
+}

@@ -1,14 +1,13 @@
-import {dirname} from 'path'
-import {fileURLToPath} from 'url'
-import {FlatCompat} from '@eslint/eslintrc'
+import baseConfig, { restrictEnvAccess } from "@tilli-pro/eslint-config";
+import nextjsConfig from "@tilli-pro/eslint-config/nextjs";
+import reactConfig from "@tilli-pro/eslint-config/react";
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-})
-
-const eslintConfig = [...compat.extends('next/core-web-vitals', 'next/typescript')]
-
-export default eslintConfig
+export default [
+  {
+    ignores: [".next/**"]
+  },
+  ...baseConfig,
+  ...reactConfig,
+  ...nextjsConfig,
+  ...restrictEnvAccess,
+];
