@@ -10,7 +10,7 @@ import BackgroundWaveSVG from '@/components/LandingPage/assets/BackgroundWaveSVG
 export default function DocsPage() {
 	return (
 		<div className='relative'>
-			<div className='pt-10 space-y-20 py-20 z-20 relative'>
+			<div className='pt-10 space-y-20 py-20 z-20 relative text-brand-black'>
 				<HeroSection />
 				<DocumentationOverviewSection />
 				<hr className='border-[#F4F4F4] my-20' />

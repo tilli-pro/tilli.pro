@@ -11,7 +11,7 @@ interface CardProps {
 
 export default function Card({ title, subtitle, items }: CardProps) {
 	return (
-		<div className='flex bg-[#FCFCFC] hover:[background:var(--gradient-card-hover)] flex-col border border-foreground-muted rounded text-off-black shadow-sm p-6 min-w-0'>
+		<div className='flex bg-[#FCFCFC] hover:[background:var(--gradient-card-hover)] flex-col border border-foreground-muted rounded shadow-sm p-6 min-w-0'>
 			<span className='text-foreground mb-2'>{subtitle}</span>
 			<h3 className='text-2xl mb-14'>{title}</h3>
 

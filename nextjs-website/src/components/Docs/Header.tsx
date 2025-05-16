@@ -15,7 +15,7 @@ export default function DocsHeader() {
 			<div className='flex items-center justify-between px-6 py-3 mx-auto max-w-[95rem]'>
 				{/* Left - Logo and Docs SVG */}
 				<div className='flex items-center gap-4'>
-					<TilliWordmark size="xl" />
+					<TilliWordmark size='xl' />
 					<DocsTextSVG />
 				</div>
 
@@ -32,7 +32,6 @@ export default function DocsHeader() {
 							size='icon'
 							// onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
 							aria-label='Toggle theme'
-							className='text-black'
 						>
 							{/* {theme === 'dark' ? <Sun className='size-5' /> : <Moon className='size-5' />} */}
 							<MoonIcon className='size-5' strokeWidth={1.5} />

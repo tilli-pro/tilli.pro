@@ -5,9 +5,9 @@ import TilliWordmark from '@/assets/branding/TilliWordmark';
 
 export default function Header() {
 	return (
-		<div className='w-full sticky top-0 z-[9998] bg-white/20 p-3 text-black flex items-center justify-between px-8 md:px-32 py-6 backdrop-blur-sm'>
+		<div className='w-full sticky top-0 z-[9998] bg-white/20 p-3 flex items-center justify-between px-8 md:px-32 py-6 backdrop-blur-sm'>
 			{/* Logo */}
-			<TilliWordmark size="xl" />
+			<TilliWordmark size='xl' />
 
 			{/* Center Links */}
 			<nav>
@@ -32,7 +32,7 @@ export default function Header() {
 
 			{/* Right hand links */}
 			<div className='flex gap-2'>
-				<Button className='flex items-center gap-1 bg-transparent hover:bg-transparent text-black'>
+				<Button className='flex items-center gap-1 bg-transparent hover:bg-transparent'>
 					Pricing <ArrowUpRightIcon className='size-4' />
 				</Button>
 				<Button className='flex items-center gap-2 [background:var(--gradient-free-trial-button-in-header)] text-white rounded-md px-3 py-2'>

@@ -11,7 +11,7 @@ export default function ProductTabs() {
 						key={label}
 						size='lg'
 						variant='outline'
-						className='rounded-full border-off-black shadow-sm text-off-black whitespace-nowrap'
+						className='rounded-full border-brand-block shadow-sm whitespace-nowrap'
 					>
 						{label}
 					</Button>

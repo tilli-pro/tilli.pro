@@ -5,9 +5,7 @@
 
 @theme inline {
 	--color-background: var(--background);
-	--color-off-black: var(--off-black);
 	--color-foreground: var(--foreground);
-	--color-foreground-muted: var(--foreground-muted);
 	--font-sans: var(--font-sora);
 	--font-inter: var(--font-inter);
 	--font-mono: var(--font-geist-mono);
@@ -44,15 +42,18 @@
 	--radius-md: calc(var(--radius) - 2px);
 	--radius-lg: var(--radius);
 	--radius-xl: calc(var(--radius) + 4px);
+
+	/* Figma Colors */
+	--color-brand-black: var(--brand-black);
+	--color-figma-gray-light: var(--figma-gray-light);
+	--color-figma-gray-medium: var(--figma-gray-medium);
+	--color-figma-gray-dark: var(--figma-gray-dark);
 }
 
 :root {
 	--radius: 0.625rem;
 	--background: oklch(1 0 0);
-	--off-black: #060606;
 	--foreground: oklch(0.145 0 0);
-	/* --foreground: #000; */
-	--foreground-muted: #d9d9d9;
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.145 0 0);
 	--popover: oklch(1 0 0);
@@ -82,6 +83,12 @@
 	--sidebar-accent-foreground: oklch(0.205 0 0);
 	--sidebar-border: oklch(0.922 0 0);
 	--sidebar-ring: oklch(0.708 0 0);
+
+	/* Figma Colors */
+	--brand-black: #060606;
+	--figma-gray-light: #d9d9d9;
+	--figma-gray-medium: #a9a9a9;
+	--figma-gray-dark: rgba(6, 6, 6, 0.5);
 }
 
 .dark {
@@ -123,54 +130,33 @@
 		@apply border-border outline-ring/50;
 	}
 	body {
-		@apply bg-background text-black;
-		@apply font-sans;
-	}
-
-	:root {
-		--gradient-graident-4: linear-gradient(106deg, #6cd3ef 0%, #4648ff 65.07%, #3971ff 100%);
-		--gradient-free-trial-button-in-header: linear-gradient(
-			106deg,
-			#6cd3ef 0%,
-			#4648ff 65.07%,
-			#3971ff 100%
-		); /* TODO: this is the same as gradient-graident-4 so most likely remove most of these vars to their specific use case */
-		--gradient-sign-up-btn-in-section-1: linear-gradient(90deg, #448de6 0%, #98b2e9 100%);
-		--gradient-welcome-popover-trigger: linear-gradient(106deg, #6cefef -24.1%, #4648ff 107.26%, #712fff 151.04%);
-		--gradient-welcome-popover-content-header: linear-gradient(
-			106deg,
-			rgba(108, 239, 239, 0.8) 0%,
-			rgba(70, 72, 255, 0.8) 65.07%,
-			rgba(113, 47, 255, 0.8) 100%
-		);
-		--gradient-button-shadow: linear-gradient(90deg, #f2f2f2 0%, #fff 100%);
-		--gradient-card-hover: linear-gradient(0deg, pink, rgba(255, 255, 255, 0.5) 100%); /* TODO: use the gradient from figma */
-		--gradient-card-button-hover: linear-gradient(
-			92deg,
-			rgba(190, 190, 190, 0.5) -12.04%,
-			rgba(190, 190, 190, 0.6) 43.07%,
-			rgba(190, 190, 190, 0.8) 98.19%
-		);
-	}
-}
-
-@layer base {
-	* {
-		@apply border-border outline-ring/50;
-	}
-	body {
 		@apply bg-background text-foreground;
 	}
 }
 
-/* globals.css or your base styles */
-
-.hover-gradient-card:hover {
-	background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-		radial-gradient(
-			423.32% 134.7% at -11.43% 31.88%,
-			rgba(0, 0, 0, 0.02) 3%,
-			rgba(0, 0, 0, 0.01) 31%,
-			rgba(0, 0, 0, 0.02) 81.5%
-		);
+/* TODO: clean this up */
+:root {
+	--gradient-graident-4: linear-gradient(106deg, #6cd3ef 0%, #4648ff 65.07%, #3971ff 100%);
+	--gradient-free-trial-button-in-header: linear-gradient(
+		106deg,
+		#6cd3ef 0%,
+		#4648ff 65.07%,
+		#3971ff 100%
+	); /* TODO: this is the same as gradient-graident-4 so most likely remove most of these vars to their specific use case */
+	--gradient-sign-up-btn-in-section-1: linear-gradient(90deg, #448de6 0%, #98b2e9 100%);
+	--gradient-welcome-popover-trigger: linear-gradient(106deg, #6cefef -24.1%, #4648ff 107.26%, #712fff 151.04%);
+	--gradient-welcome-popover-content-header: linear-gradient(
+		106deg,
+		rgba(108, 239, 239, 0.8) 0%,
+		rgba(70, 72, 255, 0.8) 65.07%,
+		rgba(113, 47, 255, 0.8) 100%
+	);
+	--gradient-button-shadow: linear-gradient(90deg, #f2f2f2 0%, #fff 100%);
+	--gradient-card-hover: linear-gradient(0deg, pink, rgba(255, 255, 255, 0.5) 100%); /* TODO: use the gradient from figma */
+	--gradient-card-button-hover: linear-gradient(
+		92deg,
+		rgba(190, 190, 190, 0.5) -12.04%,
+		rgba(190, 190, 190, 0.6) 43.07%,
+		rgba(190, 190, 190, 0.8) 98.19%
+	);
 }

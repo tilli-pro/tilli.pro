@@ -5,7 +5,7 @@ import ProductTabs from '../ProductTabs';
 
 export default function TilliPayFeatureSection() {
 	return (
-		<section className='px-4 sm:px-6 lg:px-10 text-off-black'>
+		<section className='px-4 sm:px-6 lg:px-10'>
 			<ProductTabs />
 			{/* Section Heading */}
 			<h2 className='text-3xl sm:text-4xl lg:text-5xl mb-8 sm:mb-10 lg:mb-12'>
