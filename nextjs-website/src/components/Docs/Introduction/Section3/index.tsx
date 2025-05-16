@@ -25,7 +25,7 @@ export default function Section3() {
 
 			{/* Section Heading */}
 			<h2 className='text-3xl sm:text-4xl lg:text-5xl mb-8 sm:mb-10 lg:mb-12'>
-				Build Your Payment Integration with Tillipay
+				Build Your Payment Integration with tilliPay
 			</h2>
 
 			{/* Content Grid */}
@@ -41,7 +41,7 @@ export default function Section3() {
 				<div className='flex flex-1 justify-center items-center mt-4'>
 					<Image
 						src='/images/docs/introduction/build-your-payment-integration-with-tillipay.png'
-						alt='Tillipay integration diagram'
+						alt='tilliPay integration diagram'
 						width={375}
 						height={375}
 						className='max-w-full h-auto w-full sm:w-[375px]'

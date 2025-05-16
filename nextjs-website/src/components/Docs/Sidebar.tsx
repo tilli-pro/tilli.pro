@@ -17,7 +17,7 @@ const mainItems = [
 
 const bottomItems = [
 	{ label: 'Nudge', icon: NudgeSVG },
-	{ label: 'Tillipay', icon: TillipaySVG },
+	{ label: 'tilliPay', icon: TillipaySVG },
 	{ label: 'tilliX', icon: TilliUSVG, extraProps: { fill: '#A6A6A6' } },
 	{ label: 'Help Center', icon: HelpCircleIcon },
 ];
