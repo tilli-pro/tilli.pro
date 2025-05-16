@@ -6,24 +6,30 @@ import ResourceHighlightsSection from '@/components/Docs/Introduction/Section5/R
 import DeveloperSupportLinks from '@/components/Docs/DeveloperSupportLinks';
 import DocsPageFooter from '@/components/Docs/Footer';
 import BackgroundWaveSVG from '@/components/LandingPage/assets/BackgroundWaveSVG';
+import { Fragment } from 'react';
+
+const sections = [
+	<HeroSection key='hero' />,
+	<DocumentationOverviewSection key='overview' />,
+	<TilliPayFeatureSection key='tillipay' />,
+	<ProductCapabilityWidgets key='widgets' />,
+	<ResourceHighlightsSection key='resources' />,
+	<DeveloperSupportLinks key='support' />,
+];
 
 export default function DocsPage() {
 	return (
 		<div className='relative'>
 			<div className='pt-10 space-y-20 py-20 z-20 relative text-brand-black'>
-				<HeroSection />
-				<DocumentationOverviewSection />
-				<hr className='border-[#F4F4F4] my-20' />
-				<TilliPayFeatureSection />
-				<hr className='border-[#F4F4F4] my-20' />
-				<ProductCapabilityWidgets />
-				<hr className='border-[#F4F4F4] my-20' />
-				<ResourceHighlightsSection />
-				<hr className='border-[#F4F4F4] my-20' />
-				<DeveloperSupportLinks />
-				<hr className='border-foreground-muted' />
+				{sections.map((Section) => (
+					<Fragment key={Section.key}>
+						{Section}
+						<hr className='border-figma-gray-light my-20' />
+					</Fragment>
+				))}
 				<DocsPageFooter />
 			</div>
+
 			<BackgroundWaveSVG className='absolute -top-270 size-full -right-0 z-0 pointer-events-none' />
 		</div>
 	);

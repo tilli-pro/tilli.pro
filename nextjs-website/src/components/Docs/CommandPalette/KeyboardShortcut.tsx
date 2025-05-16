@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 interface KeyboardShortcutProps {
 	keys: string[] | ReactNode;
@@ -7,7 +7,7 @@ interface KeyboardShortcutProps {
 }
 
 export function KeyboardShortcut({ keys, className }: KeyboardShortcutProps) {
-	const kbdClass = cn('rounded border bg-muted px-1.5 font-mono text-xs', className);
+	const kbdClass = cn('rounded border px-1.5 font-mono text-xs', className);
 
 	if (Array.isArray(keys)) {
 		return (
