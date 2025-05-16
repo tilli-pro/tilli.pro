@@ -3,9 +3,9 @@ import GithubLogoSVG from './assets/header/svgs/GithubLogoSVG';
 import { MoonIcon, SunIcon } from 'lucide-react';
 import Link from 'next/link';
 // import { useTheme } from 'next-themes';
-import TiiliSVG from '@/assets/branding/TiiliSVG';
 import DocsTextSVG from './assets/header/svgs/DocsTextSVG';
 import DocsCommandPalette from './CommandPalette';
+import TilliWordmark from '@/assets/branding/TilliWordmark';
 
 export default function DocsHeader() {
 	// const { theme, setTheme } = useTheme();
@@ -15,7 +15,7 @@ export default function DocsHeader() {
 			<div className='flex items-center justify-between px-6 py-3 mx-auto max-w-[95rem]'>
 				{/* Left - Logo and Docs SVG */}
 				<div className='flex items-center gap-4'>
-					<TiiliSVG fill='#000' />
+					<TilliWordmark size="xl" />
 					<DocsTextSVG />
 				</div>
 
