@@ -26,9 +26,9 @@ export const navColumns = [
 	{
 		title: 'Developers',
 		links: [
-			{ label: <b>Monay</b>, href: '#', extra: 'Documentation' },
+			{ label: "Monay", href: '#', extra: 'Documentation', className: "font-bold" },
 			{ label: '', href: '#', extra: 'API Reference' },
-			{ label: <b>Nudge</b>, href: '#', extra: 'Documentation' },
+			{ label: "Nudge", href: '#', extra: 'Documentation', className: "font-bold" },
 			{ label: '', href: '#', extra: 'API Reference' },
 		],
 	},
@@ -45,6 +45,6 @@ export const navColumns = [
 
 export const bottomLinks = [
 	{ label: 'Request a Demo', href: '#' },
-	{ label: 'Start a Free Trial', href: '#' },
-	{ label: 'Contact', href: '#' },
+	{ label: 'Start a Free Trial', href: '#', },
+	{ label: 'Contact', href: '#', className: "" },
 ];

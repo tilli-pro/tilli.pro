@@ -41,13 +41,13 @@ export default function LeftSection() {
 				<SocialLinks />
 
 				{/* Copyright */}
-				<div className='text-xs flex flex-col mt-6 text-right gap-1'>
+				<div className='text-xs flex flex-col mt-6 text-right  gap-1'>
 					<span>© {thisYear} — Copyright</span>
 					<span>All Rights reserved</span>
-					<div>
+					<div className='row items-center justify-end gap-1'>
 						{copyrightLinks.map((link, idx) => (
 							<span key={link.label}>
-								<Link href={link.href} className='mx-1'>
+								<Link href={link.href}>
 									{link.label}
 								</Link>
 								{idx < copyrightLinks.length - 1 && <span className='mx-1'>|</span>}

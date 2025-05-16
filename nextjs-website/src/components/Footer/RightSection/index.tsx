@@ -1,6 +1,7 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
-import { navColumns, bottomLinks } from './RightSection';
+import { navColumns, bottomLinks } from './data';
+import { cn } from '@/lib/utils';
 
 export default function RightSection() {
 	return (
@@ -14,7 +15,7 @@ export default function RightSection() {
 								? col.links.map((link, idx) =>
 										'extra' in link ? (
 											<li key={idx}>
-												<span className='font-semibold'>{link.label}</span>
+												<span className={cn(link.className, 'font-semibold')}>{link.label}</span>
 												<div className='ml-0.5'>
 													<Link href={link.href}>{link.extra}</Link>
 												</div>
@@ -32,18 +33,18 @@ export default function RightSection() {
 			</div>
 
 			{/* Bottom Row */}
-			<div className='flex flex-col md:flex-row justify-between items-end text-white mt-12 gap-8'>
+			<div className='flex flex-col md:flex-row justify-between items-end mt-12 gap-8'>
 				{/* Links */}
 				<div className='space-y-2 text-xl'>
 					{bottomLinks.map((link) => (
-						<Link key={link.label} href={link.href} className='flex items-end gap-2'>
+						<Link key={link.label} href={link.href} className={cn(link.className, 'flex items-end gap-2')}>
 							{link.label} <ArrowUpRightIcon strokeWidth={1.5} />
 						</Link>
 					))}
 				</div>
 				{/* Headquarters */}
 				<div className='text-right'>
-					<h4 className='font-semibold text-white mb-2 text-xl'>Headquarters</h4>
+					<h4 className='font-semibold mb-2 text-xl'>Headquarters</h4>
 					<address className='not-italic text-foreground text-sm'>
 						8260 Greensboro Dr,
 						<br />
