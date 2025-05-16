@@ -26,7 +26,7 @@ export const navColumns = [
 	{
 		title: 'Developers',
 		links: [
-			{ label: "Monay", href: '#', extra: 'Documentation', className: "font-bold" },
+			{ label: "tilliPay", href: '#', extra: 'Documentation', className: "font-bold" },
 			{ label: '', href: '#', extra: 'API Reference' },
 			{ label: "Nudge", href: '#', extra: 'Documentation', className: "font-bold" },
 			{ label: '', href: '#', extra: 'API Reference' },

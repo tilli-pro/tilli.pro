@@ -14,7 +14,7 @@ export const popularGuides = [
 
 export const popularRepos = [
 	{ label: '@tilliHQ/tillix-node-sdk', href: '#' },
-	{ label: '@tilliHQ/monay-js-sdk', href: '#' },
+	{ label: '@tilliHQ/tillipay-js-sdk', href: '#' },
 	{ label: '@tilliHQ/nudge-api-wrapper', href: '#' },
 	{ label: '@tilliHQ/tilli-sandbox-tools', href: '#' },
 ];

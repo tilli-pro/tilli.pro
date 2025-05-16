@@ -16,7 +16,7 @@ export default function Section1() {
 					<p className='text-lg'>Building blocks for developers</p>
 					<p>
 						Build, customize, and scale with Tilli&apos;s modern APIs for billing, payments, and communications.
-						Whether you&apos;re integrating TilliX, Monay, or Nudge, our platform is built to get you up and
+						Whether you&apos;re integrating tilliX, tilliPay, or Nudge, our platform is built to get you up and
 						running—fast.
 					</p>
 				</div>
