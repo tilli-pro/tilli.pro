@@ -8,7 +8,7 @@ export default function Section2Right() {
 				services. With enterprise-grade security, automation, and an intuitive interface, Tilli empowers teams to manage
 				every touchpoint — from invoicing and reminders to insights and support — all in one place.
 			</p>
-			<Button className='border border-black bg-transparent text-black transition-colors w-72 hover:bg-transparent'>
+			<Button variant='outline' className='text-off-black w-72 border-black'>
 				Explore our Products
 			</Button>
 		</div>
