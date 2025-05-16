@@ -1,13 +1,13 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from './ui/button';
-import TiiliSVG from '@/assets/branding/TiiliSVG';
+import TilliWordmark from '@/assets/branding/TilliWordmark';
 
 export default function Header() {
 	return (
-		<div className='w-full sticky top-0 z-10 bg-white opacity-20 p-3 text-black flex items-center justify-between px-8 md:px-32 py-6'>
+		<div className='w-full sticky top-0 z-[9998] bg-white/20 p-3 text-black flex items-center justify-between px-8 md:px-32 py-6 backdrop-blur-sm'>
 			{/* Logo */}
-			<TiiliSVG fill='#000' />
+			<TilliWordmark size="xl" />
 
 			{/* Center Links */}
 			<nav>

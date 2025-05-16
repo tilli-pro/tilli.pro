@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
-import { navColumns, bottomLinks } from './right-section';
+import { navColumns, bottomLinks } from './RightSection';
 
 export default function RightSection() {
 	return (
@@ -8,7 +8,7 @@ export default function RightSection() {
 			<div className='md:flex md:justify-between grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-12'>
 				{navColumns.map((col) => (
 					<div key={col.title}>
-						<h4 className='text-white mb-3 text-lg'>{col.title}</h4>
+						<h4 className='mb-3 text-lg'>{col.title}</h4>
 						<ul className='space-y-1 text-sm'>
 							{col.title === 'Developers'
 								? col.links.map((link, idx) =>

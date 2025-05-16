@@ -1,15 +1,11 @@
-import Header from '../../../Header';
-import Elipses from '../Elipses';
+import Ellipses from '../Ellipses';
 import WelcomePopover from '../../../WelcomePopover';
 import Section1Left from './Section1Left';
 import Section1Right from './Section1Right';
 
 export default function Section1() {
 	return (
-		<div className='relative h-screen overflow-hidden'>
-			{/* Header */}
-			<Header />
-
+		<div className='relative min-h-screen'>
 			{/* Main content */}
 			<Section1Left />
 			<Section1Right />
@@ -19,8 +15,8 @@ export default function Section1() {
 			{/* Welcome popover */}
 			<WelcomePopover />
 
-			{/* Elipses (background) */}
-			<Elipses />
+			{/* Ellipses (background) */}
+			<Ellipses />
 		</div>
 	);
 }

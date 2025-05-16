@@ -3,8 +3,8 @@ import Ellipse7Left from '../assets/Ellipse7Left';
 import Ellipse10 from '../assets/Ellipse10';
 import Ellipse12 from '../assets/Ellipse12';
 
-// TODO: fix the elipses to be aligned exactly like in figma
-export default function Elipses() {
+// TODO: fix the ellipses to be aligned exactly like in figma
+export default function Ellipses() {
 	return (
 		<>
 			{/* top middle */}

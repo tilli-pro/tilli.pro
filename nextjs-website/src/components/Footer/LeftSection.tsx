@@ -2,6 +2,7 @@ import SocialLinks from './RightSection/SocialLinks';
 import { ChevronRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import TiiliSVG from '@/assets/branding/TiiliSVG';
+import TilliWordmark from '@/assets/branding/TilliWordmark';
 const description =
 	'We’re devoted to creating a global consumer environment that feels more personalized and connected than ever before. Through cloud-based, customer-centric tools, we’re revolutionizing CPaaS and payment processing landscapes to create avenues that help businesses and people connect, collaborate, and make payments in real-time.';
 
@@ -19,7 +20,8 @@ export default function LeftSection() {
 			{/* Top Section */}
 			<div className='flex-1 flex flex-col gap-6'>
 				{/* Logo */}
-				<TiiliSVG />
+				{/* <TiiliSVG /> */}
+				<TilliWordmark size={48} />
 
 				{/* Description */}
 				<p className='max-w-sm'>{description}</p>

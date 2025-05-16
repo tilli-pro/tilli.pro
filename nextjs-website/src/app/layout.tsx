@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter, Sora } from 'next/font/google';
 import './globals.css';
 import GlobalHotkeys from '@/hooks/GlobalHotkeys';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const sora = Sora({
 	variable: '--font-sora',
@@ -27,8 +29,10 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${sora.variable} ${inter.variable} antialiased`}>
+				<Header />
 				{children}
 				<GlobalHotkeys />
+				<Footer />
 			</body>
 		</html>
 	);
