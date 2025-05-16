@@ -8,7 +8,6 @@ function YoutubeSVG({ className, ...props }: JSX.IntrinsicAttributes & SVGProps<
 	return (
 		<svg
 			className={cn('h-full w-auto', className)}
-			fill='#1A1A1A'
 			{...props}
 			xmlns='http://www.w3.org/2000/svg'
 			width='30'

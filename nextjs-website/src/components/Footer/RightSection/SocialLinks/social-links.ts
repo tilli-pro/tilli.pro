@@ -4,7 +4,15 @@ import FacebookSVG from '@/assets/footer/social-media/FacebookSVG';
 import LinkedInSVG from '@/assets/footer/social-media/LinkedInSVG';
 import XSVG from '@/assets/footer/social-media/XSVG';
 
-export const socialLinks = [
+
+export type SocialLink = {
+	href: string;
+	label: string;
+	icon: React.FC<Record<string, unknown> & { className?: string }>;
+	iconClass: string;
+	btnClass: string;
+} | {};
+export const socialLinks: SocialLink[] = [
 	{
 		href: 'https://www.youtube.com/@tillisoftware',
 		label: 'YouTube',
@@ -12,6 +20,7 @@ export const socialLinks = [
 		iconClass: 'size-6',
 		btnClass: 'p-2',
 	},
+	{},
 	{
 		href: 'https://www.linkedin.com/company/tilli-llc',
 		label: 'LinkedIn',
