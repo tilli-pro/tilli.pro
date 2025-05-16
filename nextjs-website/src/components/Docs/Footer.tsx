@@ -7,14 +7,14 @@ import EmailSignUpInput from '@/components/EmailSignUpInput';
 
 export default function DocsPageFooter() {
 	return (
-		<div className='text-off-black w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6'>
+		<div className='text-off-black w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 px-8'>
 			{/* left */}
 			<div className='flex flex-col gap-10'>
 				<div className='flex items-center gap-6'>
 					<TiiliSVG fill='#000' />
 					<DocsTextSVG height={30} width={75} />
 				</div>
-				<div className='flex items-center gap-6 whitespace-nowrap'>
+				<div className='flex items-center gap-6 whitespace-nowrap flex-wrap'>
 					<Link href='https://tilli.pro' className='hover:underline'>
 						tilli.pro
 					</Link>
