@@ -1,17 +1,15 @@
-import base from "@tilli-pro/eslint-config/base";
-import next from "@tilli-pro/eslint-config/nextjs";
+import base from "@tilli-pro/eslint-config";
 
-const eslintConfig = [
+/**
+ * @type {import('eslint').Linter.Config}
+ */
+export default [
   ...base,
-  ...next,
   {
-    rules: {
-      "@typescript-eslint/no-unused-expressions": "off",
-      "@typescript-eslint/dot-notation": "off",
-      "@typescript-eslint/no-empty-function": "off",
-      "@next/next/no-page-custom-font": "off"
+    languageOptions: {
+      parserOptions: {
+        project: "./tsconfig.json",
+      }
     }
   }
-];
-
-export default eslintConfig;
+]
