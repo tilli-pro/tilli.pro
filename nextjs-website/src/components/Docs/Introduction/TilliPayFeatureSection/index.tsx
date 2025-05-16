@@ -1,28 +1,12 @@
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { features, productTabs } from './data';
+import { features } from './data';
 import FeatureItem from './FeatureItem';
+import ProductTabs from '../ProductTabs';
 
-export default function Section3() {
+export default function TilliPayFeatureSection() {
 	return (
 		<section className='px-4 sm:px-6 lg:px-10 text-off-black'>
-			{/* Product Tabs */}
-			<div className='mb-4 sm:mb-6 flex flex-col gap-3 sm:gap-4'>
-				<span className='text-black/50 text-base sm:text-lg'>SEE IT IN ACTION</span>
-				<div className='flex flex-wrap gap-3 sm:gap-4 lg:gap-6 mb-6 sm:mb-8 lg:mb-10'>
-					{productTabs.map((label) => (
-						<Button
-							key={label}
-							size='lg'
-							variant='outline'
-							className='rounded-full border-off-black shadow-sm text-off-black whitespace-nowrap'
-						>
-							{label}
-						</Button>
-					))}
-				</div>
-			</div>
-
+			<ProductTabs />
 			{/* Section Heading */}
 			<h2 className='text-3xl sm:text-4xl lg:text-5xl mb-8 sm:mb-10 lg:mb-12'>
 				Build Your Payment Integration with tilliPay

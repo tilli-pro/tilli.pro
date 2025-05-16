@@ -4,7 +4,7 @@ import GradientBackgroundSVG from './assets/introduction/GradientBackgroundSVG';
 import Terminal1SVG from './assets/introduction/Terminal1SVG';
 import Terminal2SVG from './assets/introduction/Terminal2SVG';
 
-export default function Section1() {
+export default function HeroSection() {
 	return (
 		<div className='text-black flex flex-col lg:flex-row gap-20 px-10 py-20'>
 			{/* left */}

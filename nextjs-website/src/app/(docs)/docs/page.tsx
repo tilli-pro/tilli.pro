@@ -1,9 +1,9 @@
-import Section1 from '@/components/Docs/Introduction/Section1';
-import Section2 from '@/components/Docs/Introduction/Section2';
-import Section3 from '@/components/Docs/Introduction/Section3';
-import Section4 from '@/components/Docs/Introduction/Section4';
-import Section5 from '@/components/Docs/Introduction/Section5';
-import Section6 from '@/components/Docs/Introduction/Section6';
+import HeroSection from '@/components/Docs/Introduction/HeroSection';
+import DocumentationOverviewSection from '@/components/Docs/Introduction/DocumentationOverviewSection';
+import TilliPayFeatureSection from '@/components/Docs/Introduction/TilliPayFeatureSection';
+import ProductCapabilityWidgets from '@/components/Docs/Introduction/ProductCapabilityWidgets';
+import ResourceHighlightsSection from '@/components/Docs/Introduction/Section5/ResourceHighlightsSection';
+import DeveloperSupportLinks from '@/components/Docs/DeveloperSupportLinks';
 import DocsPageFooter from '@/components/Docs/Footer';
 import BackgroundWaveSVG from '@/components/LandingPage/assets/BackgroundWaveSVG';
 
@@ -11,16 +11,16 @@ export default function DocsPage() {
 	return (
 		<div className='relative'>
 			<div className='pt-10 space-y-20 py-20 z-20 relative'>
-				<Section1 />
-				<Section2 />
+				<HeroSection />
+				<DocumentationOverviewSection />
 				<hr className='border-[#F4F4F4] my-20' />
-				<Section3 />
+				<TilliPayFeatureSection />
 				<hr className='border-[#F4F4F4] my-20' />
-				<Section4 />
+				<ProductCapabilityWidgets />
 				<hr className='border-[#F4F4F4] my-20' />
-				<Section5 />
+				<ResourceHighlightsSection />
 				<hr className='border-[#F4F4F4] my-20' />
-				<Section6 />
+				<DeveloperSupportLinks />
 				<hr className='border-foreground-muted' />
 				<DocsPageFooter />
 			</div>

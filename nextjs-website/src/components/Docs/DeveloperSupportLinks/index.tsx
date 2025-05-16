@@ -1,15 +1,8 @@
 import LongArrowUpRightSVG from '@/assets/svgs/LongArrowRightSVG';
 import Link from 'next/link';
+import { links } from './data';
 
-// TODO: Swap out with correct links
-const links = [
-	{ label: 'Join our Slack', href: 'https://docs.tilli.com/slack' },
-	{ label: 'Contact Developer Support', href: 'https://docs.tilli.com/support' },
-	{ label: 'System Status', href: 'https://docs.tilli.com/support' },
-	{ label: 'Submit a ticket', href: 'https://docs.tilli.com/support' },
-];
-
-export default function Section6() {
+export default function DeveloperSupportLinks() {
 	return (
 		<div className='text-off-black space-y-4 pl-10 sm:pl-20 sm:py-20 w-full max-w-7xl flex flex-col'>
 			<h2 className='text-6xl pb-2'>Support</h2>
