@@ -12,10 +12,10 @@ const variantsConfig = {
 		keys: ['⌘ K'],
 	},
 	sidebar: {
-		buttonClassName: 'p-0 font-inter hover:bg-transparent group', // FIXME: for some reason, the group is applying to the whole DocsSidebar
+		buttonClassName: 'p-0 font-inter hover:bg-transparent group/button', // FIXME: for some reason, the group is applying to the whole DocsSidebar
 		searchIconClassName: 'size-4 stroke-[1.5]',
-		keyboardShortcutClassName: 'bg-white py-0.5 text-sm ml-1 group-hover:text-brand-black',
-		buttonLeftContainerClassName: 'group-hover:text-brand-black',
+		keyboardShortcutClassName: 'bg-white py-0.5 text-sm ml-1 group/button:text-brand-black',
+		buttonLeftContainerClassName: 'group-hover/button:text-brand-black',
 		keys: (
 			<div className='flex items-center gap-2 justify-between'>
 				<span className='font-light'>⌘</span>

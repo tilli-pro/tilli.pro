@@ -1,9 +1,9 @@
-import TiiliSVG from '@/assets/branding/TiiliSVG';
 import DocsTextSVG from './assets/header/svgs/DocsTextSVG';
 import Link from 'next/link';
 import GithubLogoSVG from './assets/header/svgs/GithubLogoSVG';
 import { MoonIcon } from 'lucide-react';
 import EmailSignUpInput from '@/components/EmailSignUpInput';
+import TilliWordmark from '@/assets/branding/TilliWordmark';
 
 export default function DocsPageFooter() {
 	return (
@@ -11,8 +11,8 @@ export default function DocsPageFooter() {
 			{/* left */}
 			<div className='flex flex-col gap-10'>
 				<div className='flex items-center gap-6'>
-					<TiiliSVG fill='#000' />
-					<DocsTextSVG height={30} width={75} />
+					<TilliWordmark size={50} />
+					<DocsTextSVG height={30} width={60} />
 				</div>
 				<div className='flex items-center gap-6 whitespace-nowrap flex-wrap'>
 					<Link href='https://tilli.pro' className='hover:underline'>

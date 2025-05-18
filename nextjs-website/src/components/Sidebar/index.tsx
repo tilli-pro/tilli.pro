@@ -13,7 +13,7 @@ export function DocsSidebar() {
 	const active = 'Introduction';
 
 	return (
-		<Sidebar className='sticky font-inter text-figma-gray-medium'>
+		<Sidebar className='pt-20 font-inter text-figma-gray-medium'>
 			<SidebarContent className='bg-background py-4'>
 				<DocsCommandPalette variant='sidebar' />
 
