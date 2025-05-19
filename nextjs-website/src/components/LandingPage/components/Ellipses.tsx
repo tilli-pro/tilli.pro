@@ -8,7 +8,7 @@ export default function Ellipses() {
 	return (
 		<>
 			{/* top middle */}
-			<Ellipse7Top className='absolute -top-50 left-220 -translate-x-1/2' />
+			<Ellipse7Top className='absolute -top-100 left-235 -translate-x-1/2' />
 			{/* <Ellipse11 className='absolute -top-50 left-1/2 -translate-x-1/2' /> */}
 
 			{/* left middle */}

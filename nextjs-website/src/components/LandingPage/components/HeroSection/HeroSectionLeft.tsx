@@ -4,7 +4,7 @@ import EmailSignUpInput from '@/components/EmailSignUpInput';
 
 export default function HeroSectionLeft() {
 	return (
-		<div className='absolute z-10 top-60 left-20 flex flex-col gap-6'>
+		<div className='absolute z-10 top-35 left-20 flex flex-col gap-6'>
 			<h2 className='sm:text-6xl text-4xl leading-tight'>
 				Smarter Financial <br /> Solutions for Every <br /> Industry
 			</h2>
