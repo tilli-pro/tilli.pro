@@ -4,9 +4,10 @@ import Image from 'next/image';
 
 export default function AboutHero() {
 	return (
-		<div className='flex flex-col @sm:flex-row gap-4 items-center justify-between'>
+		<div className='flex flex-col @xl:flex-row gap-10 items-center justify-between'>
+			{/* left */}
 			<div className='max-w-4xl space-y-8'>
-				<h2 className='text-4xl sm:text-6xl leading-tight'>
+				<h2 className='text-4xl @6xl:text-6xl leading-tight'>
 					Powering the Future <br /> of Customer <br /> Communication
 				</h2>
 				<p>
@@ -17,6 +18,8 @@ export default function AboutHero() {
 					Talk to our team now <ChevronRightIcon />
 				</Button>
 			</div>
+
+			{/* right */}
 			<Image src='/images/about/team-collaboration.png' alt='About' width={200} height={200} className='w-100' />
 		</div>
 	);
