@@ -137,7 +137,7 @@
 
 /* TODO: clean this up */
 :root {
-	--gradient-graident-4: linear-gradient(106deg, #6cd3ef 0%, #4648ff 65.07%, #3971ff 100%);
+	--gradient-gradient-4: linear-gradient(106deg, #6cd3ef 0%, #4648ff 65.07%, #3971ff 100%);
 	--gradient-free-trial-button-in-header: linear-gradient(
 		106deg,
 		#6cd3ef 0%,

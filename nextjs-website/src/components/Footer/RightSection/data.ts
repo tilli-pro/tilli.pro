@@ -18,7 +18,7 @@ export const navColumns = [
 	{
 		title: 'Company',
 		links: [
-			{ label: 'About us', href: '#' },
+			{ label: 'About us', href: '/about' },
 			{ label: 'Careers', href: '#' },
 			{ label: 'Services', href: '#' },
 		],
@@ -26,9 +26,9 @@ export const navColumns = [
 	{
 		title: 'Developers',
 		links: [
-			{ label: "tilliPay", href: '#', extra: 'Documentation', className: "font-bold" },
+			{ label: 'tilliPay', href: '#', extra: 'Documentation', className: 'font-bold' },
 			{ label: '', href: '#', extra: 'API Reference' },
-			{ label: "Nudge", href: '#', extra: 'Documentation', className: "font-bold" },
+			{ label: 'Nudge', href: '#', extra: 'Documentation', className: 'font-bold' },
 			{ label: '', href: '#', extra: 'API Reference' },
 		],
 	},
@@ -45,6 +45,6 @@ export const navColumns = [
 
 export const bottomLinks = [
 	{ label: 'Request a Demo', href: '#' },
-	{ label: 'Start a Free Trial', href: '#', },
-	{ label: 'Contact', href: '#', className: "" },
+	{ label: 'Start a Free Trial', href: '#' },
+	{ label: 'Contact', href: '#', className: '' },
 ];
