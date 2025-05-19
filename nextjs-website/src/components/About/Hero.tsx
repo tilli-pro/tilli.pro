@@ -20,7 +20,7 @@ export default function AboutHero() {
 			</div>
 
 			{/* right */}
-			<Image src='/images/about/team-collaboration.png' alt='About' width={200} height={200} className='w-100' />
+			<Image src='/images/about/team-collaboration.png' alt='About' width={200} height={200} className='w-100 rounded' />
 		</div>
 	);
 }
