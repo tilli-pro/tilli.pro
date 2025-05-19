@@ -1,6 +1,6 @@
 import GradientSparklesSVG from '@/assets/svgs/GradientSparklesSVG';
 
-export default function Section2Left() {
+export default function PlatformOverviewSectionLeft() {
 	return (
 		<div className='flex flex-col gap-6'>
 			<div className='w-fit space-y-2'>

@@ -6,7 +6,7 @@ export default function WelcomePopover() {
 	return (
 		<Popover>
 			<PopoverTrigger asChild>
-				<Button className='size-12 fixed bottom-30 right-10 z-10 shadow-lg [background:var(--gradient-welcome-popover-trigger)]'>
+				<Button className='size-12 fixed bottom-30 right-10 z-20 shadow-lg [background:var(--gradient-welcome-popover-trigger)]'>
 					<ULogo className='size-6' />
 				</Button>
 			</PopoverTrigger>

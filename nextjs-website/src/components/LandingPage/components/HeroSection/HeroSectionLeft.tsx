@@ -2,7 +2,7 @@ import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import EmailSignUpInput from '@/components/EmailSignUpInput';
 
-export default function Section1Left() {
+export default function HeroSectionLeft() {
 	return (
 		<div className='absolute z-10 top-60 left-20 flex flex-col gap-6'>
 			<h2 className='sm:text-6xl text-4xl leading-tight'>

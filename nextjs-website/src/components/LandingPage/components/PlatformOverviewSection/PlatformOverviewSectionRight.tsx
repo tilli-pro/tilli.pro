@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 
-export default function Section2Right() {
+export default function PlatformOverviewSectionRight() {
 	return (
 		<div className='flex flex-col gap-6 max-w-lg'>
 			<p>

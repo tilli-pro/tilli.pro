@@ -5,7 +5,7 @@ import LongInvoiceWidgetSVG from '@/assets/widget-svgs/LongInvoiceWidgetSVG';
 import PartiallyPaidInvoicesWidgetSVG from '@/assets/widget-svgs/PartiallyPaidInvoicesWidgetSVG';
 
 // TODO: fix all these widgets to be aligned exactly like in figma
-export default function Section1Right() {
+export default function HeroSectionRight() {
 	return (
 		<>
 			<PartiallyPaidInvoicesWidgetSVG className='z-20 size-100 absolute top-60 right-0' />

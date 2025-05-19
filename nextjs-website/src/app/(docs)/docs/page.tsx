@@ -2,7 +2,7 @@ import HeroSection from '@/components/Docs/Introduction/HeroSection';
 import DocumentationOverviewSection from '@/components/Docs/Introduction/DocumentationOverviewSection';
 import TilliPayFeatureSection from '@/components/Docs/Introduction/TilliPayFeatureSection';
 import ProductCapabilityWidgets from '@/components/Docs/Introduction/ProductCapabilityWidgets';
-import ResourceHighlightsSection from '@/components/Docs/Introduction/Section5/ResourceHighlightsSection';
+import ResourceHighlightsSection from '@/components/Docs/Introduction/ResourceHighlightsSection/ResourceHighlightsSection';
 import DeveloperSupportLinks from '@/components/Docs/DeveloperSupportLinks';
 import DocsPageFooter from '@/components/Docs/Footer';
 import BackgroundWaveSVG from '@/components/LandingPage/assets/BackgroundWaveSVG';
