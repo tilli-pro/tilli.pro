@@ -20,7 +20,7 @@ const sections = [
 export default function DocsPage() {
 	return (
 		<div className='relative'>
-			<div className='pt-10 space-y-20 py-20 z-20 relative text-brand-black'>
+			<div className='@container space-y-20 py-20 z-20 relative text-brand-black'>
 				{sections.map((Section) => (
 					<Fragment key={Section.key}>
 						{Section}

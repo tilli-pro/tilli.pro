@@ -19,7 +19,7 @@ export default function Card({ title, subtitle, items }: CardProps) {
 				{items.map(({ label, href }, index) => (
 					<Fragment key={label}>
 						<li>
-							<Link className='flex items-center justify-between px-4 group hover:text-[#448DE6]' href={href}>
+							<Link className='flex items-center justify-between gap-4 px-4 group hover:text-[#448DE6]' href={href}>
 								<span>{label}</span>
 								<LongArrowUpRightSVG className='size-5' stroke='currentColor' />
 							</Link>

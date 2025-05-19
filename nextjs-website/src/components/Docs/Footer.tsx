@@ -7,12 +7,12 @@ import TilliWordmark from '@/assets/branding/TilliWordmark';
 
 export default function DocsPageFooter() {
 	return (
-		<div className='w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 px-8'>
+		<div className='w-full max-w-7xl mx-auto flex flex-col @2xl:flex-row justify-between gap-6 px-8'>
 			{/* left */}
 			<div className='flex flex-col gap-10'>
-				<div className='flex items-center gap-6'>
+				<div className='flex items-center gap-4'>
 					<TilliWordmark size={50} />
-					<DocsTextSVG height={30} width={60} />
+					<DocsTextSVG height={30} width={60} className='min-w-[160px]' />
 				</div>
 				<div className='flex items-center gap-6 whitespace-nowrap flex-wrap'>
 					<Link href='https://tilli.pro' className='hover:underline'>
