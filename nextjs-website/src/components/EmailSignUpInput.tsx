@@ -17,9 +17,7 @@ export default function EmailSignUpInput({
 				placeholder='Enter email address'
 			/>
 			<Button
-				className={cn(
-					'absolute right-0 bottom-0 rounded-full rounded-l-none [background:var(--gradient-sign-up-btn-in-section-1)]'
-				)}
+				className={cn('absolute right-0 bottom-0 rounded-full rounded-l-none [background:var(--gradient-light-blue)]')}
 				size={buttonSize}
 			>
 				Sign up

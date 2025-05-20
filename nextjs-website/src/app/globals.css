@@ -138,13 +138,8 @@
 /* TODO: clean this up */
 :root {
 	--gradient-gradient-4: linear-gradient(106deg, #6cd3ef 0%, #4648ff 65.07%, #3971ff 100%);
-	--gradient-free-trial-button-in-header: linear-gradient(
-		106deg,
-		#6cd3ef 0%,
-		#4648ff 65.07%,
-		#3971ff 100%
-	); /* TODO: this is the same as gradient-graident-4 so most likely remove most of these vars to their specific use case */
-	--gradient-sign-up-btn-in-section-1: linear-gradient(90deg, #448de6 0%, #98b2e9 100%);
+	--gradient-light-blue: linear-gradient(90deg, #448de6 0%, #98b2e9 100%);
+	/* TODO: move this to their use case */
 	--gradient-welcome-popover-trigger: linear-gradient(106deg, #6cefef -24.1%, #4648ff 107.26%, #712fff 151.04%);
 	--gradient-welcome-popover-content-header: linear-gradient(
 		106deg,
