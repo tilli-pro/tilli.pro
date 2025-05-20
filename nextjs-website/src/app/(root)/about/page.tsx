@@ -1,4 +1,5 @@
 import AboutHero from '@/components/About/Hero';
+import LeadershipTeam from '@/components/About/LeadershipTeam';
 import OurMission from '@/components/About/OurMission';
 import OurStory from '@/components/About/OurStory';
 import ProductValuesSection from '@/components/About/ProductValuesSection';
@@ -14,6 +15,7 @@ export default async function AboutPage() {
 			<WhatWeDo />
 			<TeamIdentitySection />
 			<OurStory />
+			<LeadershipTeam />
 		</main>
 	);
 }
