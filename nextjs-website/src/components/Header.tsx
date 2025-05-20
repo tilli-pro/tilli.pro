@@ -35,7 +35,7 @@ export default function Header() {
 				<Button className='flex items-center gap-1 text-brand-primary shadow-none bg-transparent hover:bg-transparent'>
 					Pricing <ArrowUpRightIcon className='size-4' />
 				</Button>
-				<Button className='flex items-center gap-2 [background:var(--gradient-4)] text-white rounded-md px-3 py-2'>
+				<Button className='flex items-center gap-2 [background:var(--gradient-gradient-4)] text-white rounded-md px-3 py-2'>
 					Free Trial <ArrowUpRightIcon className='size-4 text-white' />
 				</Button>
 			</div>

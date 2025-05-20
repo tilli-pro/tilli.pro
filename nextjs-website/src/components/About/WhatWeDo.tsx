@@ -2,14 +2,14 @@ import Image from 'next/image';
 
 export default function WhatWeDo() {
 	return (
-		<div className='flex flex-col @xl:flex-row gap-20 px-20 items-center'>
+		<div className='flex flex-col @4xl:flex-row gap-20 @4xl:px-20 items-center'>
 			{/* left */}
 			<Image
 				src='/images/about/what-we-do.png'
 				alt='team meeting'
 				width={200}
 				height={200}
-				className='flex-1 w-100 rounded'
+				className='w-full flex-1 @4xl:w-100 rounded'
 			/>
 
 			{/* right */}

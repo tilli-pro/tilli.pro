@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function OurMission() {
 	return (
-		<div className='flex flex-col @xl:flex-row gap-20 px-20 items-center'>
+		<div className='flex flex-col @4xl:flex-row gap-20 @4xl:px-20 items-center'>
 			{/* left */}
 			<div className='flex flex-col gap-4 flex-1'>
 				<p className='text-figma-gray-medium'>OUR MISSION</p>
@@ -29,7 +29,13 @@ export default function OurMission() {
 			</div>
 
 			{/* right */}
-			<Image src='/images/about/teamwork.png' alt='About' width={200} height={200} className='flex-1 w-100 rounded' />
+			<Image
+				src='/images/about/teamwork.png'
+				alt='About'
+				width={200}
+				height={200}
+				className='w-full flex-1 @4xl:w-100 rounded'
+			/>
 		</div>
 	);
 }
