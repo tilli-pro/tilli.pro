@@ -3,6 +3,7 @@ import LeadershipTeam from '@/components/About/LeadershipTeam';
 import OurMission from '@/components/About/OurMission';
 import OurStory from '@/components/About/OurStory';
 import ProductValuesSection from '@/components/About/ProductValuesSection';
+import TeamEvolutionSection from '@/components/About/TeamEvolutionSection';
 import TeamIdentitySection from '@/components/About/TeamIdentitySection';
 import WhatWeDo from '@/components/About/WhatWeDo';
 
@@ -16,6 +17,7 @@ export default async function AboutPage() {
 			<TeamIdentitySection />
 			<OurStory />
 			<LeadershipTeam />
+			<TeamEvolutionSection />
 		</main>
 	);
 }
