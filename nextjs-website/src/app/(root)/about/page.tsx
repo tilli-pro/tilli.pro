@@ -7,6 +7,7 @@ import ProductValuesSection from '@/components/About/ProductValuesSection';
 import TeamIdentitySection from '@/components/About/TeamIdentitySection';
 import WhatWeDo from '@/components/About/WhatWeDo';
 import TimelineCarousel from '@/components/About/TimelineCarousel';
+import JoinUsSection from '@/components/JoinUsSection';
 
 export default async function AboutPage() {
 	return (
@@ -20,6 +21,7 @@ export default async function AboutPage() {
 			<LeadershipTeam />
 			<TeamEvolutionSection />
 			<TimelineCarousel />
+			<JoinUsSection />
 		</main>
 	);
 }
