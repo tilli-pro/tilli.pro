@@ -7,8 +7,9 @@ export default function AboutHero() {
 		<div className='pt-10 @xl:pt-20 flex flex-col @xl:flex-row gap-10 items-center justify-between'>
 			{/* left */}
 			<div className='max-w-4xl space-y-8'>
-				<h2 className='text-4xl @6xl:text-6xl leading-tight'>
-					Powering the Future <br /> of Customer <br /> Communication
+				<h2 className='text-4xl @6xl:text-6xl leading-tight bg-[linear-gradient(283deg,#000_35.26%,#325EF6_124.44%)] bg-clip-text text-transparent'>
+					Powering the Future <br className='hidden @xl:block' /> of Customer <br className='hidden @xl:block' />{' '}
+					Communication
 				</h2>
 				<p>
 					tilli is transforming how businesses connect with people—making every payment, <br /> reminder, and message
