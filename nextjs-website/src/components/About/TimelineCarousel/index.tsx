@@ -18,6 +18,7 @@ export default function TimelineCarousel() {
 
 	const visibleMilestones = milestones.slice(current, current + MILESTONES_VISIBLE);
 
+	// TODO: -mx-12 xl:-mx-32 to have it use the fill width but fix the alignment of the pills to match figma first
 	return (
 		<div className='py-8 space-y-6 font-inter'>
 			<Controls current={current} maxIdx={maxIdx} prev={prev} next={next} />
