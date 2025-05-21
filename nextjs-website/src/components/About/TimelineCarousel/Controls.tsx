@@ -1,7 +1,7 @@
-import { ChevronRightIcon } from 'lucide-react';
-
 import { cn } from '@/lib/utils';
-import { ChevronLeftIcon } from 'lucide-react';
+import GradientChevronLeftSVG from '@/assets/svgs/GradientChevronLeft';
+import GradientChevronRightSVG from '@/assets/svgs/GradientChevronRight';
+import { Button } from '@/components/ui/button';
 
 interface ControlsProps {
 	current: number;
@@ -12,21 +12,30 @@ interface ControlsProps {
 
 export default function Controls({ current, maxIdx, prev, next }: ControlsProps) {
 	return (
-		<div className='flex items-center gap-4 pb-6'>
-			<ChevronLeftIcon
-				className={cn('text-[#448DE6] cursor-pointer', {
+		<div className='flex items-center gap-14 pb-6'>
+			{/* Left Button */}
+			<Button
+				variant='ghost'
+				size='icon'
+				className={cn({
 					'opacity-50 pointer-events-none': current === 0,
 				})}
-				size={30}
 				onClick={prev}
-			/>
-			<ChevronRightIcon
-				className={cn('text-[#448DE6] cursor-pointer', {
+			>
+				<GradientChevronLeftSVG className='scale-225' />
+			</Button>
+
+			{/* Right Button */}
+			<Button
+				variant='ghost'
+				size='icon'
+				className={cn({
 					'opacity-50 pointer-events-none': current >= maxIdx,
 				})}
-				size={30}
 				onClick={next}
-			/>
+			>
+				<GradientChevronRightSVG className='scale-225' />
+			</Button>
 		</div>
 	);
 }
