@@ -1,7 +1,6 @@
-import Link from 'next/link';
-import { Button } from './ui/button';
 import { ClipboardIcon } from 'lucide-react';
 import GradientLinkButton from './GradientLinkButton';
+
 export default function JoinUsSection() {
 	return (
 		<section className='w-full flex items-center justify-center'>

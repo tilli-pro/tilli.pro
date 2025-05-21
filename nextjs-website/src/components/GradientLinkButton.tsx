@@ -1,17 +1,14 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
-export default function GradientLinkButton({
-	backgroundColor,
-	children,
-	href,
-	linkClassName,
-}: {
+interface GradientLinkButtonProps {
 	backgroundColor: string;
 	children: React.ReactNode;
 	href: string;
 	linkClassName?: string;
-}) {
+}
+
+export default function GradientLinkButton({ backgroundColor, children, href, linkClassName }: GradientLinkButtonProps) {
 	return (
 		<Link href={href} className={cn('inline-block rounded-full', linkClassName)}>
 			<div

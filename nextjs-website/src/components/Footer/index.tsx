@@ -1,6 +1,5 @@
 'use client';
 
-import TilliWordmark from '@/assets/branding/TilliWordmark';
 import LeftSection from './LeftSection';
 import RightSection from './RightSection';
 
