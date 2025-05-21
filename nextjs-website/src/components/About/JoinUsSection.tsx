@@ -1,5 +1,5 @@
 import { ClipboardIcon } from 'lucide-react';
-import GradientLinkButton from './GradientLinkButton';
+import GradientLinkButton from '../GradientLinkButton';
 
 export default function JoinUsSection() {
 	return (

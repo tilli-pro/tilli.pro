@@ -7,7 +7,8 @@ import ProductValuesSection from '@/components/About/ProductValuesSection';
 import TeamIdentitySection from '@/components/About/TeamIdentitySection';
 import WhatWeDo from '@/components/About/WhatWeDo';
 import TimelineCarousel from '@/components/About/TimelineCarousel';
-import JoinUsSection from '@/components/JoinUsSection';
+import JoinUsSection from '@/components/About/JoinUsSection';
+import InfoCardsSection from '@/components/About/InfoCardsSection';
 
 export default async function AboutPage() {
 	return (
@@ -22,6 +23,7 @@ export default async function AboutPage() {
 			<TeamEvolutionSection />
 			<TimelineCarousel />
 			<JoinUsSection />
+			<InfoCardsSection />
 		</main>
 	);
 }
