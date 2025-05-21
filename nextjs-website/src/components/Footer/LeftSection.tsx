@@ -3,6 +3,7 @@ import { ChevronRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import TilliWordmark from '@/assets/branding/TilliWordmark';
 import { copyrightLinks, description } from './data';
+import GradientLinkButton from '../GradientLinkButton';
 
 export default function LeftSection() {
 	const thisYear = new Date().getFullYear();
@@ -19,12 +20,14 @@ export default function LeftSection() {
 				<p className='max-w-sm text-figma-gray-medium'>{description}</p>
 
 				{/* Button */}
-				<Link href='/about' className='w-52 rounded-full bg-gradient-to-r from-[#448DE6] to-[#98B2E9] p-[1px]'>
-					<div className='flex items-center justify-center gap-2 px-4 py-2 rounded-full text-white bg-black'>
-						<p>More about us</p>
-						<ChevronRightIcon className='size-5' />
-					</div>
-				</Link>
+				<GradientLinkButton
+					href='/about'
+					backgroundColor='black'
+					linkClassName='w-50 bg-gradient-to-r from-[#448DE6] to-[#98B2E9] p-[1px] hover:!bg-pink-400'
+				>
+					<p>More about us</p>
+					<ChevronRightIcon className='size-5' />
+				</GradientLinkButton>
 			</div>
 
 			{/* Bottom Section/Row */}
