@@ -1,11 +1,12 @@
 import AboutHero from '@/components/About/Hero';
 import LeadershipTeam from '@/components/About/LeadershipTeam';
+import TeamEvolutionSection from '@/components/About/TeamEvolutionSection';
 import OurMission from '@/components/About/OurMission';
 import OurStory from '@/components/About/OurStory';
 import ProductValuesSection from '@/components/About/ProductValuesSection';
-import TeamEvolutionSection from '@/components/About/TeamEvolutionSection';
 import TeamIdentitySection from '@/components/About/TeamIdentitySection';
 import WhatWeDo from '@/components/About/WhatWeDo';
+import CompanyTimelineSection from '@/components/About/TimelineCarousel';
 
 export default async function AboutPage() {
 	return (
@@ -18,6 +19,7 @@ export default async function AboutPage() {
 			<OurStory />
 			<LeadershipTeam />
 			<TeamEvolutionSection />
+			<CompanyTimelineSection />
 		</main>
 	);
 }

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function AboutHero() {
 	return (
-		<div className='flex flex-col @xl:flex-row gap-10 items-center justify-between'>
+		<div className='pt-10 @xl:pt-20 flex flex-col @xl:flex-row gap-10 items-center justify-between'>
 			{/* left */}
 			<div className='max-w-4xl space-y-8'>
 				<h2 className='text-4xl @6xl:text-6xl leading-tight'>
