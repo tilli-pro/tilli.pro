@@ -10,7 +10,7 @@ interface NavigationPillProps {
 export default function NavigationPill({ year, isActive, onClick }: NavigationPillProps) {
 	return (
 		<Button
-			className={cn('rounded-full p-[1px] bg-white', {
+			className={cn('rounded-full p-[1px] bg-white z-10', {
 				'[background-image:var(--gradient-light-blue)]': isActive,
 				'border border-[#98B2E9] text-[#98B2E9] hover:bg-[#98B2E9] hover:text-white': !isActive,
 			})}
