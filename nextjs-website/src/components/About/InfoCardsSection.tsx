@@ -1,6 +1,7 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '../ui/button';
+import JoinUsSection from './JoinUsSection';
 
 export default function InfoCardsSection() {
 	return (

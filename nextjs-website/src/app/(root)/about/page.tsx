@@ -22,8 +22,10 @@ export default async function AboutPage() {
 			<LeadershipTeam />
 			<TeamEvolutionSection />
 			<TimelineCarousel />
-			<JoinUsSection />
-			<InfoCardsSection />
+			<div className='space-y-30'>
+				<JoinUsSection />
+				<InfoCardsSection />
+			</div>
 		</main>
 	);
 }
