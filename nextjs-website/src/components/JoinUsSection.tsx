@@ -3,23 +3,20 @@ import GradientLinkButton from './GradientLinkButton';
 
 export default function JoinUsSection() {
 	return (
-		<section className='w-full flex items-center justify-center'>
-			<div className='flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-4'>
-				<h1 className='text-4xl md:text-5xl text-center md:text-left leading-tight'>
-					Join us and shape the future of modern business tools.
-				</h1>
+		<div className='flex flex-col md:flex-row items-center justify-between @lg:px-20 gap-10'>
+			<h1 className='text-2xl @2xl:text-5xl leading-tight'>
+				Join us and shape the future of <br className='hidden @2xl:block' /> modern business tools.
+			</h1>
 
-				<div className='mt-8 md:mt-0 md:ml-12'>
-					<GradientLinkButton
-						href='/careers'
-						backgroundColor='white'
-						linkClassName='p-[1.5px] [background:var(--gradient-gradient-4)]'
-					>
-						<span className='whitespace-nowrap'>See Our Open Roles</span>
-						<ClipboardIcon size={20} strokeWidth={1.75} />
-					</GradientLinkButton>
-				</div>
-			</div>
-		</section>
+			<GradientLinkButton
+				href='/careers'
+				backgroundColor='white'
+				linkClassName='p-[1.5px] [background:var(--gradient-gradient-4)]'
+				divClassName='hover:bg-blue-50'
+			>
+				<span className='whitespace-nowrap'>See Our Open Roles</span>
+				<ClipboardIcon size={20} strokeWidth={1.75} />
+			</GradientLinkButton>
+		</div>
 	);
 }
