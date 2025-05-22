@@ -5,6 +5,7 @@ import LongInvoiceWidgetSVG from '@/assets/widget-svgs/LongInvoiceWidgetSVG';
 import PartiallyPaidInvoicesWidgetSVG from '@/assets/widget-svgs/PartiallyPaidInvoicesWidgetSVG';
 
 // TODO: fix all these widgets to be aligned exactly like in figma
+// GlassComponent1SVG & PartiallyPaidInvoicesWidgetSVG look off so reexport these
 export default function HeroSectionRight() {
 	return (
 		<>
