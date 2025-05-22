@@ -17,10 +17,10 @@ export default function GradientLinkButton({
 	divClassName,
 }: GradientLinkButtonProps) {
 	return (
-		<Link href={href} className={cn('inline-block rounded-full', linkClassName)}>
+		<Link href={href} className={cn('rounded-full', linkClassName)}>
 			<div
 				className={cn(
-					'flex items-center justify-between gap-4 font-inter rounded-full px-5 py-2 transition-colors',
+					'flex items-center justify-between gap-4 font-inter rounded-full px-5 py-2',
 					`bg-${backgroundColor}`,
 					divClassName
 				)}

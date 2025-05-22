@@ -4,7 +4,7 @@ export const navColumns = [
 		links: [
 			{ label: 'Nudge', href: '#' },
 			{ label: 'tilliX', href: '#' },
-			{ label: 'tilliPay', href: '#' },
+			{ label: 'tilliPay', href: '/tilliPay' },
 		],
 	},
 	{

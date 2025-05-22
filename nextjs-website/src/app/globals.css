@@ -137,6 +137,7 @@
 
 /* TODO: clean this up */
 :root {
+	--gradient-title-gradient: linear-gradient(283deg, #000 35.26%, #325ef6 124.44%);
 	--gradient-gradient-4: linear-gradient(106deg, #6cd3ef 0%, #4648ff 65.07%, #3971ff 100%);
 	--gradient-light-blue: linear-gradient(90deg, #448de6 0%, #98b2e9 100%);
 	/* TODO: move this to their use case */
