@@ -1,6 +1,7 @@
 import EllipseSVG from './EllipseSVG';
 import MacbookDisplayingInvoicesPage from '../../LandingPage/components/HeroSection/MacbookDisplayingInvoicesPage';
 import HeroLeft from './HeroLeft';
+import TryTilliPayCTA from './TryTilliPayCTA';
 
 export default function Hero() {
 	return (
@@ -14,6 +15,8 @@ export default function Hero() {
 				<HeroLeft />
 				<MacbookDisplayingInvoicesPage className='w-250 mt-25' />
 			</div>
+
+			<TryTilliPayCTA />
 		</div>
 	);
 }
