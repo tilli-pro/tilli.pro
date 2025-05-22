@@ -22,9 +22,8 @@ export default function LeftSection() {
 				{/* Button */}
 				<GradientLinkButton
 					href='/about'
-					backgroundColor='black'
 					linkClassName='w-50 bg-gradient-to-r from-[#448DE6] to-[#98B2E9] p-[1px] hover:!bg-pink-400'
-					divClassName='hover:bg-black/50'
+					divClassName='hover:bg-black/50 bg-black'
 				>
 					<p>More about us</p>
 					<ChevronRightIcon className='size-5' />

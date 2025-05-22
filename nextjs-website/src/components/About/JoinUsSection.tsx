@@ -10,9 +10,8 @@ export default function JoinUsSection() {
 
 			<GradientLinkButton
 				href='/careers'
-				backgroundColor='white'
 				linkClassName='p-[1.5px] [background:var(--gradient-gradient-4)]'
-				divClassName='hover:bg-blue-50'
+				divClassName='hover:bg-blue-50 bg-white'
 			>
 				<span className='whitespace-nowrap'>See Our Open Roles</span>
 				<ClipboardIcon size={20} strokeWidth={1.75} />

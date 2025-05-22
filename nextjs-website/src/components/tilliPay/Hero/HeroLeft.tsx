@@ -22,8 +22,7 @@ export default function HeroLeft() {
 				<GradientLinkButton
 					href='/tilliPay/demo'
 					linkClassName='p-[1.5px] [background:var(--gradient-gradient-4)]'
-					backgroundColor='white'
-					divClassName='h-10 gap-4 px-6'
+					divClassName='h-10 gap-4 px-6 bg-white'
 				>
 					<p className='whitespace-nowrap'>View our Products</p> <ChevronRightIcon strokeWidth={1.5} size={24} />
 				</GradientLinkButton>
