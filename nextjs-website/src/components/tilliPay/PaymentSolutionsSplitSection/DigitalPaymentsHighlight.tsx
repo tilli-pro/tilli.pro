@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function DigitalPaymentsHighlight() {
 	return (
-		<div className='pt-10 h-140 relative border [background-image:var(--gradient-card-bg)] border-b-figma-gray-light rounded-lg p-6 w-2/5 space-y-6 overflow-hidden'>
+		<div className='pt-10 h-140 relative border [background-image:var(--gradient-card-bg)] border-b-figma-gray-light rounded-lg p-6 w-full 2xl:w-2/5 space-y-6 overflow-hidden'>
 			<h3 className='text-2xl [background-image:var(--gradient-card-title)] bg-clip-text text-transparent'>
 				An Online Payment Platform for the New Age
 			</h3>
