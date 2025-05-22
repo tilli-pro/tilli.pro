@@ -1,4 +1,6 @@
 import InvoiceViewCommentsSVG from '@/assets/widget-svgs/InvoiceViewCommentsSVG';
+import InvoiceSummaryCard from './InvoiceSummaryCard';
+import { Status } from '@/components/StatusBadge';
 
 export default function B2CPaymentFeatureCard() {
 	return (
@@ -13,6 +15,19 @@ export default function B2CPaymentFeatureCard() {
 				Our B2C payment solutions are built with the customers in mind. tilliPay’s B2C payment solution provides immediate
 				and innovative customer payment options coupled with a unified customer experience.
 			</p>
+
+			<InvoiceSummaryCard
+				imgSrc='/images/person1.png'
+				invoiceNumber='Invoice #249112'
+				dueDate='12/01/2025'
+				status={Status.Pending}
+			/>
+			<InvoiceSummaryCard
+				imgSrc='/images/person2.png'
+				invoiceNumber='Invoice #249113'
+				dueDate='05/05/2025'
+				status={Status.Paid}
+			/>
 		</div>
 	);
 }
