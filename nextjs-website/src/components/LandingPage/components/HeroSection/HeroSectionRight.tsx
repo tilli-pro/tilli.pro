@@ -12,7 +12,7 @@ export default function HeroSectionRight() {
 			<AddAccountWidgetSVG className='z-5 size-100 absolute bottom-40 left-150 w-fit backdrop-blur-xl' />
 			<LongInvoiceWidgetSVG className='z-5 size-20 absolute top-90 left-148 w-fit backdrop-blur-xl' />
 			<GlassComponent1SVG className='z-10 size-100 absolute bottom-40 -right-10' />
-			<MacbookDisplayingInvoicesPage className='z-10 absolute bottom-40 right-40' />
+			<MacbookDisplayingInvoicesPage className='z-10 absolute bottom-40 right-40 xl:w-250' />
 		</>
 	);
 }
