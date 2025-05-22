@@ -148,6 +148,7 @@
 			rgba(0, 0, 0, 0.01) 31%,
 			rgba(0, 0, 0, 0.01) 81.5%
 		);
+	--gradient-card-title: linear-gradient(87deg, #060606 -6.5%, #6c6c6c 105.21%);
 
 	/* TODO: move this to their use case */
 	--gradient-welcome-popover-trigger: linear-gradient(106deg, #6cefef -24.1%, #4648ff 107.26%, #712fff 151.04%);
