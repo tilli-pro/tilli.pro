@@ -21,7 +21,7 @@ export default function DigitalPaymentsHighlight() {
 				alt='invoice view'
 				width={1000}
 				height={1000}
-				className='absolute bottom-0 -right-35'
+				className='absolute -bottom-4 -right-35'
 			/>
 		</div>
 	);
