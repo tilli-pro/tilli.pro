@@ -3,6 +3,7 @@ import TilliPayWordmark from '@/assets/branding/TilliPayWordmark';
 import { Button } from '@/components/ui/button';
 import { ChevronRightIcon } from 'lucide-react';
 import GradientLinkButton from '../GradientLinkButton';
+import MacbookDisplayingInvoicesPage from '../LandingPage/components/HeroSection/MacbookDisplayingInvoicesPage';
 
 export default function Hero() {
 	return (
@@ -19,7 +20,6 @@ export default function Hero() {
 					tilliPay helps you collect, manage, and automate payments in one seamless platform—built to meet the needs of
 					modern service providers and their customers.
 				</p>
-
 				<div className='flex items-center gap-4'>
 					<GradientLinkButton
 						href='/tilliPay/demo'
@@ -27,16 +27,18 @@ export default function Hero() {
 						backgroundColor='white'
 						divClassName='h-10 gap-4 px-6'
 					>
-						<p className='whitespace-nowrap'>View our Products</p> <ChevronRightIcon strokeWidth={1.5} size={22} />
+						<p className='whitespace-nowrap'>View our Products</p> <ChevronRightIcon strokeWidth={1.5} size={24} />
 					</GradientLinkButton>
 					<Button
 						variant='outline'
 						className='font-normal text-base hover:text-white hover:opacity-90 gap-4 [background:var(--gradient-gradient-4)] !px-6 !py-2 text-white rounded-full h-11'
 					>
 						Book a Demo
-						<ChevronRightIcon className='size-[22px]' strokeWidth={1.5} />
+						<ChevronRightIcon className='size-[24px]' strokeWidth={1.5} />
 					</Button>
 				</div>
+
+				<MacbookDisplayingInvoicesPage />
 			</div>
 		</div>
 	);
