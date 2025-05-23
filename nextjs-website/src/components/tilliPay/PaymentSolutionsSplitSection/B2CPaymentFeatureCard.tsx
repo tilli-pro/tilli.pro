@@ -4,7 +4,7 @@ import { Status } from '@/components/StatusBadge';
 
 export default function B2CPaymentFeatureCard() {
 	return (
-		<div className='pt-10 relative border [background-image:var(--gradient-card-bg)] border-b-figma-gray-light rounded-lg p-6 w-full 2xl:w-3/5 space-y-6 overflow-hidden'>
+		<div className='pt-10 relative border [background-image:var(--gradient-card-bg)] border-b-figma-gray-light rounded-lg p-6 w-4xl 2xl:w-3/5 space-y-6 overflow-hidden'>
 			<h3 className='text-2xl [background-image:var(--gradient-card-title)] bg-clip-text text-transparent'>
 				B2C Payment Solutions
 			</h3>
